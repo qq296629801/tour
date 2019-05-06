@@ -30,7 +30,9 @@
 	</view>
 </view>
 
-<view class="wode_out">退出</view>
+<view class="wode_out">
+  <navigator url="../login/login">退出</navigator>
+</view>
 
 <!-- 底部版权 begin -->
 <include src="../public/footer.wxml"/>

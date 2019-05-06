@@ -2,35 +2,45 @@
   height: 100%;
 }
 .logo{
-  border-top: 1px #f2f2f2 solid;
-  padding: 100px 0;
+  border-top: 1rpx #f2f2f2 solid;
+  padding: 100rpx 0;
   text-align: center;
 }
 .logo image{
-  width: 280rpx;
-  height: 85rpx;
+  width: 200rpx;
+  height: 200rpx;
+}
+.login-form, .login-footer {
+  display: flex;
+  flex-direction: column;
 }
 .login-txt{
-  background: #fff2e9;
+  width: 625rpx;
+  height: 84rpx;
+  background: #ffffff;
   font-size: 24rpx;
-  text-align: center;
-  color:#333;
-  padding: 15rpx;
-  margin-bottom: 5rpx;
+  color:#009e96;
+  border-radius: 3rpx;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+  line-height: 84rpx;
+  padding: 0 45rpx;
+  box-sizing: border-box;
 }
 .login-btn{
-  background: #ec6238;
-  border: 0;
-  color: #fff;
-  font-size: 24rpx;
-  padding: 15rpx;
-  margin: 100rpx 20rpx 20rpx 20rpx;
+  text-align: center;
+  background: #009e96;
+  color: #ffffff;
 }
-.forget-reg{
-  font-size: 24rpx;
-  color: #ec6238;
-  margin: 0 30rpx;
+.forget {
+  color: #009e96;
+  text-align: center;
 }
-.reg{
-  float: right;
+.login-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 76rpx;
+}
+.register {
+  margin-bottom: 97rpx;
 }

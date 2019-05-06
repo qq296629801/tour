@@ -1,15 +1,18 @@
 /**app.wxss**/
 .container {
   height: 100%;
+  width: 100%;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
   background: #f2f2f2;
+  font-size: 26rpx;
 }
 
 .footer {
-    padding: 0 10px;
+    padding: 0 10rpx;
     font-size: 26rpx;
     line-height: 55rpx;
     text-align: center;

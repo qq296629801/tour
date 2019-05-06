@@ -27,7 +27,7 @@
   </swiper>
 
   <view class="dots">
-      <block wx:for="{{banner}}" wx:key="{{banner}}">
+      <block wx:for="{{banner}}" wx:key="*this">
         <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>
       </block>
   </view>

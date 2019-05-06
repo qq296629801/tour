@@ -71,7 +71,7 @@
 
 .box .search-bar-txt{
   background: #32908a;
-  border-radius: 30px;
+  border-radius: 30rpx;
   font-size: 30rpx;
   padding: 10rpx 30rpx;
   margin: 0 20rpx;
@@ -90,7 +90,7 @@
   color: #333;
   width: 700rpx;
   border-radius: 20rpx;
-  box-shadow: 1px 1px 1px #999;
+  box-shadow: 1rpx 1rpx 1rpx #999;
 }
 .scroll-ads::before{
   content: '最新公告:';
@@ -112,7 +112,7 @@
 }
 .sub-banner{
   width: 100%;
-  height: 120px;
+  height: 120rpx;
 }
 
 .workbench{
@@ -161,53 +161,53 @@
 }
 
 .project .mobi_title{
-	font-size: 15px;
+	font-size: 15rpx;
 	color: #777;
   line-height: 110%;
   font-weight: normal;
-  padding: 10px;
+  padding: 10rpx;
   background-color: #ffffff;
   position: relative;
 }
 
 .text_red{
-  padding: 0px 1.5px;
-  border-radius: 1.5px;
+  padding: 0rpx 1.5rpx;
+  border-radius: 1.5rpx;
   background-color: #ff7777;
   position: relative;
-  margin-right: 5px;
+  margin-right: 5rpx;
 }
 
 .project .mobi_icon{
-	padding: 0px 1.5px;
-  border-radius: 1.5px;
+	padding: 0rpx 1.5rpx;
+  border-radius: 1.5rpx;
   background-color: #ff7777;
   position: relative;
-  margin-right: 5px;
+  margin-right: 5rpx;
 }
 /*list*/
 .project .list{
 	overflow: hidden;
-	padding: 0 20px 0 0;
+	padding: 0 20rpx 0 0;
 	background-color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 15rpx;
 }
 .project .list-img{
   position: relative;
 	float: left;
-	width: 120px;
+	width: 120rpx;
   padding-left: 22rpx;
 }
 .project .list-img .video-img{
-	width: 120px;
-	height: 120px;
+	width: 120rpx;
+	height: 120rpx;
   border-radius: 10rpx;
 }
 .project .list-detail{
 	position: absolute;
-  margin-top: 15px;
-  margin-left: 135px;
-  margin-right: 10px;
+  margin-top: 15rpx;
+  margin-left: 135rpx;
+  margin-right: 10rpx;
 }
 .project .list-title text{
 	word-break: break-all;
@@ -223,14 +223,14 @@
 }
 .project .list-tag view.state{
     display: block;
-    font-size: 11px;
+    font-size: 11rpx;
     color: #81aaf7;
-    width: 50px;
-    padding: 2px;
-    border: 1px solid #93b9ff;
-    border-radius: 2px;
+    width: 50rpx;
+    padding: 2rpx;
+    border: 1rpx solid #93b9ff;
+    border-radius: 2rpx;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 10rpx;
 		float: left;
 }
 .project .list-tag .join{
@@ -239,10 +239,10 @@
   color: #bbb;
   position: absolute;
   display: inline;
-  margin: 10px 0 0 20px;
+  margin: 10rpx 0 0 20rpx;
 }
 .project .list-tag .list-num{
-	font-size: 16px;
+	font-size: 16rpx;
   color: #ff6666;
 }
 .project .list-info{
@@ -250,7 +250,7 @@
   color: #bbb;
   line-height: 110%;
   font-weight: normal;
-	margin-top: 40px;
+	margin-top: 40rpx;
 }
 
 .row-container {
@@ -262,9 +262,9 @@
 }
 .row-container .header {
     display: block;
-    height: 44px;
-    line-height: 44px;
-    padding: 0 12px;
+    height: 44rpx;
+    line-height: 44rpx;
+    padding: 0 12rpx;
 }
 .row-container .header .left {
     float: left;
@@ -277,36 +277,36 @@
     display: inline-block;
     background-repeat: no-repeat;
     position: absolute;
-    top: 12px;
+    top: 12rpx;
     left: 0;
 }
 .bilibili-index-hot {
-    background-position: -5px -215px;
-    width: 20px;
-    height: 20px;
+    background-position: -5rpx -215rpx;
+    width: 20rpx;
+    height: 20rpx;
 }
 .row-container .header .right {
     float: right;
     font-size: 30rpx;
     color: #999;
     position: relative;
-    padding-right: 25px;
+    padding-right: 25rpx;
 }
 .row-container .header .hot {
     font-size: 30rpx;
     color: #ffb30f;
-    padding: 0 0 0 25px;
+    padding: 0 0 0 25rpx;
 }
 .bilibili-index-ranking {
-    background-position: -5px -65px;
-    width: 20px;
-    height: 20px;
+    background-position: -5rpx -65rpx;
+    width: 20rpx;
+    height: 20rpx;
 }
 .row-container .content-wrapper {
     display: block;
     width: 100%;
     overflow: hidden;
-    padding: 0 6px;
+    padding: 0 6rpx;
     box-sizing: border-box;    
 }
 .row-container img {
@@ -316,7 +316,7 @@
     width: 50%;
     display: inline-block;
     position: relative;
-    padding: 0 6px 24px;
+    padding: 0 6rpx 24rpx;
     vertical-align: top;
     box-sizing: border-box;
 }
@@ -343,7 +343,7 @@
     position: relative;
     display: block;
     width: 100%;
-    padding-top: 5px;
+    padding-top: 5rpx;
     box-sizing: border-box;  
 }
 .row-container .content-list .item .cover-img {
@@ -358,17 +358,17 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    border-radius: 5px;
+    border-radius: 5rpx;
     box-sizing: border-box;  
 }
 .row-container .content-list .info .title {
     width: 100%;
-    max-height: 36px;
+    max-height: 36rpx;
     overflow: hidden;
     color: #444;
     font-size: 30rpx;
     box-sizing: border-box;  
-    margin-bottom: 4px;
+    margin-bottom: 4rpx;
 }
 .row-container .left {
     float: left;
@@ -379,7 +379,7 @@
     width: 50%;
     font-size: 30rpx;
     color: #999;
-    padding-left: 18px;
+    padding-left: 18rpx;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -394,23 +394,23 @@
 }
 .row-container .content-list .info .bangumi-title {
     text-align: center;
-    font-size: 14px;
+    font-size: 14rpx;
     line-height: 46rpx;
     color: #444;
 }
 .row-container .content-list .info .bangumi-page {
     text-align: center;
-    font-size: 13px;
+    font-size: 13rpx;
     color: #de698c;
 }
 .row-container .content-list .info .avatar {
     position: relative;
-    width: 42px;
-    height: 42px;
-    border-radius: 21px;
-    border: 2px solid #fff;
-    top: -26px;
-    left: 7px;
+    width: 42rpx;
+    height: 42rpx;
+    border-radius: 21rpx;
+    border: 2rpx solid #fff;
+    top: -26rpx;
+    left: 7rpx;
     z-index: 10;
     box-sizing: border-box;
 }
@@ -423,9 +423,9 @@
 .row-container .content-list .info .user {
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 5rpx;
     width: 100%;
-    padding-left: 56px;
+    padding-left: 56rpx;
     box-sizing: border-box;
 }
 .row-container .text-overflow {
@@ -434,32 +434,32 @@
     white-space: nowrap;
 }
 .row-container .content-list .info .name {
-    font-size: 13px;
+    font-size: 13rpx;
     color: #444;
     line-height: 44rpx;
 }
 .row-container .content-list .info .desp {
-    font-size: 13px;
+    font-size: 13rpx;
     color: #999;
-    padding-top: 2px;
+    padding-top: 2rpx;
 }
 .row-container .content-list .info .online {
     position: absolute;
-    top: 25px;
-    width: 48px;
-    padding: 0 1px;
+    top: 25rpx;
+    width: 48rpx;
+    padding: 0 1rpx;
     color: #fff;
     background-color: #ccc;
-    border-radius: 6px;
+    border-radius: 6rpx;
     text-align: center;
-    height: 20px;
-    line-height: 20px;
+    height: 20rpx;
+    line-height: 20rpx;
     font-size: 30rpx;
 }
 .find-list{
   background: #fff; 
   margin-top: 10rpx; 
-  padding: 20rpx 30rpx 10rpx 20px;
+  padding: 20rpx 30rpx 10rpx 20rpx;
   margin-bottom: 10rpx; 
 }
 
