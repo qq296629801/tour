@@ -39,14 +39,14 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath":"images/home.png",
-        "selectedIconPath":"images/home_se.png"
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_se.png"
       },
       {
         "pagePath": "pages/activity/activity",
         "text": "活动",
-        "iconPath":"images/talk.png",
-        "selectedIconPath":"images/talk_se.png"
+        "iconPath": "images/talk.png",
+        "selectedIconPath": "images/talk_se.png"
       },
       {
         "pagePath": "pages/livelist/livelist",
@@ -57,9 +57,10 @@
       {
         "pagePath": "pages/puuser/puuser",
         "text": "用户",
-        "iconPath":"images/user.png",
-        "selectedIconPath":"images/user_se.png"
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_se.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
