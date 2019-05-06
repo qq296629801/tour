@@ -1,0 +1,71 @@
+<!-- 导入Item模板 -->
+<import src="../public/item.wxml"/>
+
+<view class="box">
+        <view class="loca">
+          <image src="../../images/地理位置图标.png"></image>
+          <text>长沙</text>
+        </view>
+        <view class="search-bar">
+          <image src="../../images/搜索.png"></image>
+          <input placeholder="   农业规划/雕塑小品/荷兰风车..." placeholder-style="color:#fff;" class="search-bar-txt"/>
+      </view>
+</view>
+
+<!-- 轮播 -->
+<view class="home-wrap">
+  <swiper autoplay="{{autoplay}}" current="{{currentSwiper}}" bindchange="swiperChange" duration="{{duration}}" interval="{{interval}}">
+    <view wx:for="{{banner}}" wx:key="unique">
+      <swiper-item>
+        <view>
+          <navigator url="{{item.columns.target}}">
+           <image src="{{item.columns.url}}" mode="scaleToFill center" class="banner" lazy-load="true"></image>
+          </navigator>
+        </view>
+      </swiper-item>
+    </view>
+  </swiper>
+
+  <view class="dots">
+      <block wx:for="{{banner}}">
+        <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>
+      </block>
+  </view>
+
+<!-- 文字广告 -->
+  <view class="scroll-txt">
+    <text class="scroll-ads">我的小熊去哪儿了</text>
+  </view>
+ 
+
+ <!-- 工作台 -->
+  <view class="index-menu">
+		<navigator class="index-menu-item" wx:for="{{indexmenu}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
+			<image src="{{item.icon}}"></image>
+			<text>{{item.text}}</text>
+		</navigator>
+	</view>
+
+   <!-- 公司 begin -->
+  <view class="row-container">
+    <navigator class="header" url="/pages/list/list">
+      <view class="left">
+        <text>推荐商家</text>
+      </view>
+      <view class="left">
+        <text>推荐商家</text>
+      </view>
+      <view class="left">
+        <text>推荐商家</text>
+      </view>
+    </navigator>
+    <view class="content-wrapper">
+      <block wx:for="{{hotList}}" wx:key="unique">
+        <!-- 使用热门推荐模板，传入当前循环对象item -->
+        <template is="jiefItem1" data="{{...item.columns}}"/>
+      </block>
+    </view>
+  </view>
+  <!-- 热门推荐 end -->
+
+</view>

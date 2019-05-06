@@ -1,0 +1,76 @@
+
+<view class="container container-gray">
+<form bindsubmit="formSubmit" bindreset="formReset">
+	<view class="group">
+		<view class="group-header">基本信息</view>
+		<view class="group-body">
+			<view class="input-list">
+
+				<view class="input-item">
+					<text class="input-item-label">标的名称</text>
+					<view class="input-item-content">
+						<input type="text" name="name" placeholder=""></input>
+					</view>
+				</view>
+
+	      <view class="input-item">
+					<text class="input-item-label">开始时间</text>
+					<view class="input-item-content">
+						<picker mode="date" value="2015-09-01" start="2015-09-01" end="2017-09-01" name="begin_date">
+                <view class="picker">
+                2015-09-01
+                </view>
+             </picker>
+					</view>
+				</view>
+
+        	<view class="input-item">
+           <text class="input-item-label">结束时间</text>
+					<view class="input-item-content">
+             <picker mode="date" value="2015-09-01" start="2015-09-01" end="2017-09-01" name="end_date">
+                <view class="picker">
+                   2015-09-01
+                </view>
+             </picker>
+					</view>
+				</view>
+
+				<view class="input-item">
+					<text class="input-item-label">开启竞标</text>
+					<view class="input-item-content">
+            <switch name="btn" />
+					</view>
+				</view>
+        <view class="input-item">
+					<text class="input-item-label">投标预算</text>
+					<view class="input-item-content">
+						<input type="text" name='price' placeholder=""></input>
+					</view>
+				</view>
+         
+      	<view class="input-item input-item-full">
+				  <text class="input-item-label">图片介绍</text>
+					<view class="img-upload">
+						<view class="img-add" bindtap='addimg'><image src="../../images/add.png" class="addimg"></image></view>
+						<view class="img-item">
+							<image src="{{pic}}" mode="aspectFill"></image>
+						</view>
+					</view>
+				</view>
+
+				<view class="input-item input-item-full">
+					<text class="input-item-label">文字介绍</text>
+					<textarea placeholder="可输入100字" name='context' maxlength="1000"></textarea>
+				</view>
+
+			</view>
+		</view>
+
+	</view>
+	<view class="btn-submit">
+    <button class="btn-block btn-orange" form-type="submit">Submit</button>
+    <button class="btn-block btn-orange" form-type="reset">Reset</button>
+	</view>
+</form>
+ 
+</view>

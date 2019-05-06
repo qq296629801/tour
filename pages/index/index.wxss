@@ -1,0 +1,537 @@
+/**index.wxss**/
+.dots {
+  width: 210rpx;
+  height: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: row;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:360rpx;
+}
+ 
+/*未选中时的小圆点样式 */
+.dot {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 12rpx;
+  margin-right: 10rpx;
+  background-color: #ffffff;
+}
+ 
+/*选中以后的小圆点样式  */
+.active {
+  width: 12rpx;
+  height: 12rpx;
+  background-color: #b8c0b0;
+}
+
+
+.home-wrap{
+  background: #f2f2f2;
+}
+.box{
+  width: 100%;
+  height: 91rpx;
+}
+.box .loca{
+  float: left;
+  width: 20%;
+  height: 91rpx;
+  background: #00746c;
+}
+.loca text{
+  color:#fff;
+  margin-top: 8rpx;
+  font-size: 30rpx;
+  margin-left: 10rpx;
+}
+.loca image{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.box .search-bar{
+  background: #00746c;
+  float: right;
+  padding: 10rpx 0;
+  width: 80%;
+  color:#fff;
+}
+.box .search-bar image{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 29rpx;
+  left: 190rpx;
+}
+
+.box .search-bar-txt{
+  background: #32908a;
+  border-radius: 30px;
+  font-size: 30rpx;
+  padding: 10rpx 30rpx;
+  margin: 0 20rpx;
+  color:#fff;
+}
+
+.banner{
+  width: 100%;
+  height:  500rpx;
+}
+.scroll-txt{
+  text-align: center;
+  background: #fff; 
+  margin: 20rpx auto 20rpx auto;
+  padding: 10rpx 0 10rpx 0;
+  color: #333;
+  width: 700rpx;
+  border-radius: 20rpx;
+  box-shadow: 1px 1px 1px #999;
+}
+.scroll-ads::before{
+  content: '最新公告:';
+	display: inline-block;
+  color: #47a86c;
+}
+
+.scroll-ads{
+  text-align: center;
+  font-size: 25rpx;
+}
+.ads-list{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+}
+.ads-item{
+  flex:1;
+}
+.sub-banner{
+  width: 100%;
+  height: 120px;
+}
+
+.workbench{
+  font-size: 42rpx;
+  background: #fff;
+  padding-bottom: 30rpx;
+  margin-bottom:10rpx;
+  color: #333;
+}
+.workbench .title{
+  font-size:25rpx;
+  padding: 20rpx 20rpx;
+  margin-bottom: 40rpx;
+  display: block;
+}
+.workbench .list{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+}
+.workbench .items{
+  width: 100rpx;
+  flex:1;
+  text-align: center;
+}
+.workbench .items image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.workbench .items image.service-icon{
+  width: 50rpx;
+  height: 50rpx;
+}
+.workbench .items text{
+  display: block;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.project{
+  font-size: 42rpx;
+  background: #fff;
+  padding-bottom: 30rpx;
+  margin-bottom:10rpx;
+  color: #333;
+}
+
+.project .mobi_title{
+	font-size: 15px;
+	color: #777;
+  line-height: 110%;
+  font-weight: normal;
+  padding: 10px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.text_red{
+  padding: 0px 1.5px;
+  border-radius: 1.5px;
+  background-color: #ff7777;
+  position: relative;
+  margin-right: 5px;
+}
+
+.project .mobi_icon{
+	padding: 0px 1.5px;
+  border-radius: 1.5px;
+  background-color: #ff7777;
+  position: relative;
+  margin-right: 5px;
+}
+/*list*/
+.project .list{
+	overflow: hidden;
+	padding: 0 20px 0 0;
+	background-color: #fff;
+  margin-bottom: 15px;
+}
+.project .list-img{
+  position: relative;
+	float: left;
+	width: 120px;
+  padding-left: 22rpx;
+}
+.project .list-img .video-img{
+	width: 120px;
+	height: 120px;
+  border-radius: 10rpx;
+}
+.project .list-detail{
+	position: absolute;
+  margin-top: 15px;
+  margin-left: 135px;
+  margin-right: 10px;
+}
+.project .list-title text{
+	word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+	font-size: 30rpx;
+  color: #333;
+	font-weight: bold;
+  line-height: 120%;
+}
+.project .list-tag view.state{
+    display: block;
+    font-size: 11px;
+    color: #81aaf7;
+    width: 50px;
+    padding: 2px;
+    border: 1px solid #93b9ff;
+    border-radius: 2px;
+    text-align: center;
+    margin-top: 10px;
+		float: left;
+}
+.project .list-tag .join{
+	font-size: 42rpx;
+  line-height: 120%;
+  color: #bbb;
+  position: absolute;
+  display: inline;
+  margin: 10px 0 0 20px;
+}
+.project .list-tag .list-num{
+	font-size: 16px;
+  color: #ff6666;
+}
+.project .list-info{
+	font-size: 42rpx;
+  color: #bbb;
+  line-height: 110%;
+  font-weight: normal;
+	margin-top: 40px;
+}
+
+.row-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.row-container .header {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 12px;
+}
+.row-container .header .left {
+    float: left;
+    color: #444;
+    font-size: 30rpx;
+    position: relative;
+    padding-left: 5rpx;
+}
+.bilibili-index-sprite {
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+.bilibili-index-hot {
+    background-position: -5px -215px;
+    width: 20px;
+    height: 20px;
+}
+.row-container .header .right {
+    float: right;
+    font-size: 30rpx;
+    color: #999;
+    position: relative;
+    padding-right: 25px;
+}
+.row-container .header .hot {
+    font-size: 30rpx;
+    color: #ffb30f;
+    padding: 0 0 0 25px;
+}
+.bilibili-index-ranking {
+    background-position: -5px -65px;
+    width: 20px;
+    height: 20px;
+}
+.row-container .content-wrapper {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 6px;
+    box-sizing: border-box;    
+}
+.row-container img {
+    vertical-align: top;
+}
+.row-container .content-list {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    padding: 0 6px 24px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.row-container .content-list .item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;  
+}
+.row-container .content-list .item .top {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 63%;
+    box-sizing: border-box;  
+}
+.row-container .content-list .info {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    box-sizing: border-box;  
+}
+.row-container .content-list .item .cover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+    box-sizing: border-box;  
+}
+.row-container .content-list .info .title {
+    width: 100%;
+    max-height: 36px;
+    overflow: hidden;
+    color: #444;
+    font-size: 30rpx;
+    box-sizing: border-box;  
+    margin-bottom: 4px;
+}
+.row-container .left {
+    float: left;
+    box-sizing: border-box;  
+}
+.row-container .content-list .info .cell {
+    position: relative;
+    width: 50%;
+    font-size: 30rpx;
+    color: #999;
+    padding-left: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.row-container .bangumi-list {
+    width: 33.333333%;
+}
+.row-container .bangumi-list .top {
+    padding-top: 75%;
+}
+.row-container .content-list .info .bangumi-title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 46rpx;
+    color: #444;
+}
+.row-container .content-list .info .bangumi-page {
+    text-align: center;
+    font-size: 13px;
+    color: #de698c;
+}
+.row-container .content-list .info .avatar {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    border: 2px solid #fff;
+    top: -26px;
+    left: 7px;
+    z-index: 10;
+    box-sizing: border-box;
+}
+.row-container .content-list .info .avatar image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.row-container .content-list .info .user {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 100%;
+    padding-left: 56px;
+    box-sizing: border-box;
+}
+.row-container .text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.row-container .content-list .info .name {
+    font-size: 13px;
+    color: #444;
+    line-height: 44rpx;
+}
+.row-container .content-list .info .desp {
+    font-size: 13px;
+    color: #999;
+    padding-top: 2px;
+}
+.row-container .content-list .info .online {
+    position: absolute;
+    top: 25px;
+    width: 48px;
+    padding: 0 1px;
+    color: #fff;
+    background-color: #ccc;
+    border-radius: 6px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    font-size: 30rpx;
+}
+.find-list{
+  background: #fff; 
+  margin-top: 10rpx; 
+  padding: 20rpx 30rpx 10rpx 20px;
+  margin-bottom: 10rpx; 
+}
+
+.find-list text{
+  font-size: 30rpx;
+}
+.find-items{
+  display: flex;
+  flex: 1;
+  margin-bottom: 15rpx;
+  flex-direction: row;
+  position: relative;
+}
+.find-icon{
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-right: 10rpx;
+}
+.series{
+  padding-top: 5rpx;
+}
+.find-type{
+  color:#ec5c30;
+  padding-top: 5rpx;
+  position: absolute;
+  right:0;
+  text-align: right;
+}
+.font-type{
+  color:#aaa;
+}
+.font-type-1{
+  position: absolute;
+  right:0;
+  text-align: right;
+}
+.channel{
+  margin-right: 10rpx;
+}
+.earnest-money{
+  color:#ec5c30;
+}
+.index-menu{
+	width: 100%;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	background: #fff;
+  margin-bottom: 10rpx;
+}
+.index-menu-item{
+	-webkit-flex: 0 0 30%;
+	-webkit-box-flex: 0;
+	        flex: 0 0 30%;
+	max-width: 30%;
+	text-align: center;
+	padding: 20rpx 70rpx;
+	box-sizing: border-box;
+}
+.index-menu-item image{
+	width: 150rpx;
+	height: 150rpx;
+}
+.index-menu-item text{
+  margin-top: -20rpx;
+	display: block;
+  text-align: center;
+	font-size: 25rpx;
+	line-height: 1.4;
+	white-space: nowrap;
+  padding-left: 30rpx;
+}

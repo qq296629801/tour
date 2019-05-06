@@ -1,0 +1,24 @@
+
+@import '../companydetail/companydetail.wxss';
+
+
+.box{
+  width: 100%;
+  overflow: hidden;
+}
+
+.box-img{
+  width: 100rpx;
+  float: left;
+  padding-left: 10rpx;
+}
+
+.box-img image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+}
+.box-img text{
+  text-align: center;
+  font-size: 30rpx;
+}

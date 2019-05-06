@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/puuser/puuser",
+    "pages/activity/activity",
+    "pages/activityapply/activityapply",
+    "pages/activitydetail/activitydetail",
+    "pages/au/au",
+    "pages/companyapply/companyapply",
+    "pages/companydetail/companydetail",
+    "pages/companylist/companylist",
+    "pages/livelist/livelist",
+    "pages/login/login",
+    "pages/mycompany/mycompany",
+    "pages/mylive/mylive",
+    "pages/myproduct/myproduct",
+    "pages/mytender/mytender",
+    "pages/productdetail/productdetail",
+    "pages/productlist/productlist",
+    "pages/question/question",
+    "pages/service/service",
+    "pages/pumytender/pumytender",
+    "pages/puactivitydetail/puactivitydetail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#009f96",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "首页",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#004340",
+    "backgroundColor": "#009f96",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"images/home.png",
+        "selectedIconPath":"images/home_se.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动",
+        "iconPath":"images/talk.png",
+        "selectedIconPath":"images/talk_se.png"
+      },
+      {
+        "pagePath": "pages/livelist/livelist",
+        "text": "发布",
+        "iconPath": "images/tender.png",
+        "selectedIconPath": "images/tender_se.png"
+      },
+      {
+        "pagePath": "pages/puuser/puuser",
+        "text": "用户",
+        "iconPath":"images/user.png",
+        "selectedIconPath":"images/user_se.png"
+      }
+    ]
+  }
+}

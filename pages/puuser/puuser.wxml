@@ -1,0 +1,39 @@
+
+<view class="container">
+<view class="personal_info">
+	<view class="photo_wrap">
+   <image src="{{userInfo.avatarUrl}}" class="photo"></image>
+  </view>
+	<view class="nickname">
+		{{userInfo.nickName}}
+	</view>
+</view>
+
+
+<!-- 工作台 -->
+  <view class="index-menu">
+		<navigator class="index-menu-item" wx:for="{{indexmenu}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
+			<image src="{{item.icon}}"></image>
+			<text>{{item.text}}</text>
+		</navigator>
+	</view>
+
+
+<view class="wode_item_wrap">
+	<view class="wode_item" wx:for="{{mode.data}}" wx:key="{{item.name}}">
+		{{item.name}}
+    <navigator class="header" url="../{{item.url}}/{{item.url}}">
+      <span class="arrow_wrap">
+        <image src="../../images/xiangyou1.png"></image>
+      </span>
+     </navigator>
+	</view>
+</view>
+
+<view class="wode_out">退出</view>
+
+<!-- 底部版权 begin -->
+<include src="../public/footer.wxml"/>
+<!-- 底部版权 end -->
+</view>
+

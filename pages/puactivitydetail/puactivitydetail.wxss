@@ -1,0 +1,48 @@
+
+@import '../companydetail/companydetail.wxss';
+.space-block{
+  margin-bottom: 10rpx;
+}
+
+.space-company-img{
+  height: 100rpx;
+  background: #47a86c;
+}
+.space-company-img image{
+  width: 150rpx;
+  height:150rpx;
+  border-radius: 10rpx;
+  margin-bottom: -130rpx;
+  margin-left: 50rpx;
+}
+
+.space-company{
+  padding-top: 80rpx;
+  height: 200rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+  display: flex;
+}
+.space-company text{
+  float: left;
+}
+.box{
+  width: 100%;
+  overflow: hidden;
+}
+
+.box-img{
+  width: 100rpx;
+  float: left;
+  padding-left: 10rpx;
+}
+
+.box-img image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+}
+.box-img text{
+  text-align: center;
+  font-size: 30rpx;
+}

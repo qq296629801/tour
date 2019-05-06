@@ -1,0 +1,36 @@
+<view class="container">
+	<view class="filter-flex">
+		<view class="filter-tab sort-tab">
+			<text bindtap="setSortBy" data-sortindex="{{index}}" data-sortid="{{item.id}}" class="{{sortindex==index?'active':''}}" wx:for="{{sort}}" wx:key="{{item.id}}">{{item.title}}</text>
+		</view>
+	</view>
+	<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrollview}}" bindscroll="scrollHandle" bindscrolltolower="searchScrollLower">
+		<view class="conference-list">
+			<navigator class="conference-item" wx:for="{{activitylist}}" wx:key="{{item.columns.id}}" url="../activitydetail/activitydetail?id={{item.columns.id}}">
+				<view class="conference-item-img">
+          <view class="box">
+              	<image src="{{item.columns.url}}" mode="aspectFill"></image>
+				      	<text wx:if="{{item.columns.btn==true}}">竞标中</text>
+                <text wx:else>竞标结束</text>
+          </view>
+				</view>
+				<view class="conference-item-text">
+					<view class="conference-item-title">{{item.columns.name}}</view>
+					<view class="conference-item-info">
+						<text>公司评分</text>
+            <text>10</text>
+            <text>竞标人数</text>
+						<text>{{item.columns.tender_num}}</text>
+					</view>
+					<view class="conference-item-info">
+             <text>开始时间</text>
+             <text>{{item.columns.begin_date}}</text>
+             <text>结束时间</text>
+					   <text>{{item.columns.end_date}}</text>
+					</view>
+				</view>
+			</navigator>
+		</view>
+		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
+	</scroll-view>
+</view>

@@ -1,0 +1,82 @@
+.personal_info {
+    width: 100%;
+    height: 150rpx;
+    background-color: #47a86c;
+}
+.photo_wrap {
+    padding-left: 20rpx;
+    width: 130rpx; 
+    height: 130rpx;
+    float: left;
+}
+.photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 100rpx;
+}
+.nickname {
+	text-align: left;
+	color: #fff;
+  float: left;
+  font-size: 30rpx;
+}
+.wode_item_wrap {
+	background-color: #FFF;
+	font-size: 14px;
+	margin-top: 10rpx;
+}
+.wode_item {
+  height: 45px;
+	border-bottom: 1px solid rgb(236, 236, 236);
+	padding: 0 10px;
+	line-height: 45px;
+	position: relative;
+}
+.arrow_wrap {
+    width: 45rpx;
+    position: absolute;
+    right: 10rpx;
+    top: 10rpx;
+}
+.arrow_wrap image{
+  width: 45rpx;
+  height: 45rpx;
+}
+.wode_out {
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	background-color: #FFF;
+	margin-top: 10rpx;
+}
+
+.index-menu{
+	width: 100%;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	background: #fff;
+}
+.index-menu-item{
+	-webkit-flex: 0 0 25%;
+	-webkit-box-flex: 0;
+	        flex: 0 0 25%;
+	max-width: 25%;
+	text-align: center;
+	margin-top: 10rpx;
+	padding: 20rpx 20rpx;
+	box-sizing: border-box;
+	margin-bottom: -1rpx;
+}
+.index-menu-item image{
+	width: 75rpx;
+	height: 75rpx;
+}
+.index-menu-item text{
+	display: block;
+	font-size: 25rpx;
+	line-height: 1.4;
+	white-space: nowrap;
+}

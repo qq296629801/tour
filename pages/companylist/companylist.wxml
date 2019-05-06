@@ -1,0 +1,25 @@
+<!-- 导入Item模板 -->
+<import src="../public/item.wxml"/>
+<view class="container">
+<!-- 热门推荐 begin -->
+  <view class="row-container">
+    <navigator class="header">
+      <view class="left">
+        <text>供应商</text>
+      </view>
+      <view class="right hot">
+        <text></text>
+      </view>
+    </navigator>
+    <view class="content-wrapper">
+      <block wx:for="{{hotList}}" wx:key="avid">
+        <!-- 使用热门推荐模板，传入当前循环对象item -->
+        <template is="jiefItem1" data="{{...item}}"/>
+      </block>
+    </view>
+  </view>
+  <!-- 热门推荐 end -->
+    <!-- 底部版权 begin -->
+    <include src="../public/footer.wxml"/>
+    <!-- 底部版权 end -->
+  </view>

@@ -1,0 +1,60 @@
+<view class="container container-gray">
+	<view class="group">
+
+		<view class="group-header">基本信息</view>
+
+		<view class="group-body">
+			<view class="input-list">
+				<view class="input-item">
+					<text class="input-item-label">姓名</text>
+					<view class="input-item-content">
+						<input type="text" placeholder="" bindinput='userNameInput'></input>
+					</view>
+				</view>
+
+				<view class="input-item">
+					<text class="input-item-label">联系方式</text>
+					<view class="input-item-content">
+						<input type="text" placeholder=""></input>
+					</view>
+				</view>
+
+				<view class="input-item">
+					<text class="input-item-label">营业执照</text>
+					<picker class="input-item-content" bindchange="bindPickerChange" data-pickername="industry" value="{{industryindex}}" range="{{industryarr}}" mode="selector">{{industryarr[industryindex]}}
+					</picker>
+				</view>
+
+				<view class="input-item input-item-full">
+				  <text class="input-item-label">上传证件照</text>
+					<view class="img-upload">
+						<view class="img-add" bindtap='pic'>
+              <image src="../../images/add.png" class="addimg"></image>
+            </view>
+						<view class="img-item">
+							<image src="{{pic}}" mode="aspectFill" bindtap='picImg'></image>
+						</view>
+            	<view class="img-add" bindtap='aic'>
+               <image src="../../images/add.png" class="addimg"></image>
+              </view>
+						<view class="img-item">
+							<image src="{{aic}}" mode="aspectFill" bindtap='aicImg'></image>
+						</view>
+					</view>
+				</view>
+
+        <view class="input-item">
+					<text class="input-item-label">预览</text>
+          <view class="input-item-content">
+              	<image src="{{bigImg}}" mode="aspectFill" class="big-img"></image>
+          </view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="btn-submit">
+		<button class="btn-block btn-gren" bindtap="applySubmit">提交</button>
+	</view>
+
+</view>
