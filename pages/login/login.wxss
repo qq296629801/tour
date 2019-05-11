@@ -1,6 +1,3 @@
-.container {
-  height: 100%;
-}
 .logo{
   border-top: 1rpx #f2f2f2 solid;
   padding: 100rpx 0;

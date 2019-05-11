@@ -4,14 +4,23 @@ var app = getApp()
 var api = require('../../utils/api');
 Page({
   data: {
-    banner: null,
+    indicatorDots: true,
+    banner: [
+      { target: '', url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640' },
+      { target: '', url: 'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640' },
+      { target: '', url: 'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640' }
+    ],
     autoplay: true,
     interval: 3000,
     duration: 1000,
     advertise: null,
     hotList: null,
     bangumiList:null,
-    currentSwiper:0,
+    shops: [
+      { text: '商家推荐', url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640' },
+      { text: '农庄推荐', url: 'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640' },
+      { text: '会务推荐', url: 'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640' }
+    ],
     indexmenu: [
       {
         'icon': './../../images/采购商.png',
@@ -81,11 +90,6 @@ Page({
         avid: 'av8'
       }
     ],
-  },
-  swiperChange: function (e) {
-    this.setData({
-      currentSwiper: e.detail.current
-    })
   },
   /*
   * 首页banner
