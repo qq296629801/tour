@@ -10,7 +10,7 @@
       <text class="forget">忘记密码</text>
     </view>
     <view class="login-footer">
-      <text class="forget register">没有账号 ？去注册 》</text>
+      <navigator class="forget register" url="../register/register">没有账号 ？去注册 》</navigator>
       <text class="forget">Copyright@2019-2021 农旅配套联盟 版权所有</text>
     </view>
   </view>

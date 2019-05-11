@@ -1,0 +1,52 @@
+.container {
+  height: 100%;
+}
+.input {
+  height: 100rpx;
+  padding-left: 60rpx;
+  padding-right: 20rpx;
+  margin-top: 3rpx;
+  background: #fff;
+}
+.form-top {
+  margin-bottom: 94rpx;
+}
+.register-btn {
+  background: #009e96;
+  width: 608rpx;
+  height: 73rpx;
+  border-radius: 50rpx;
+  margin-bottom: 46rpx;
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 73rpx;
+}
+.tips {
+  color: #929292;
+  font-size: 22rpx;
+}
+.tips-1 {
+  color: #009e96;
+}
+.form-bottom {
+  text-align: center
+}
+.send-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-1 {
+  padding-right: 20rpx;
+  width: 100%;
+}
+.send {
+  width: 326rpx;
+  line-height: 68rpx;
+  height: 68rpx;
+  background: #009e96;
+  border-radius: 50rpx;
+  color: #fff;
+  font-size: 25rpx;
+  margin: 0;
+}

@@ -12,6 +12,7 @@
     "pages/companylist/companylist",
     "pages/livelist/livelist",
     "pages/login/login",
+    "pages/register/register",
     "pages/mycompany/mycompany",
     "pages/mylive/mylive",
     "pages/myproduct/myproduct",
