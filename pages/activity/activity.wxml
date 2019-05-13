@@ -1,36 +1,34 @@
-<view class="container">
-	<view class="filter-flex">
-		<view class="filter-tab sort-tab">
-			<text bindtap="setSortBy" data-sortindex="{{index}}" data-sortid="{{item.id}}" class="{{sortindex==index?'active':''}}" wx:for="{{sort}}" wx:key="{{item.id}}">{{item.title}}</text>
-		</view>
-	</view>
-	<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrollview}}" bindscroll="scrollHandle" bindscrolltolower="searchScrollLower">
-		<view class="conference-list">
-			<navigator class="conference-item" wx:for="{{activitylist}}" wx:key="{{item.columns.id}}" url="../activitydetail/activitydetail?id={{item.columns.id}}">
-				<view class="conference-item-img">
-          <view class="box">
-              	<image src="{{item.columns.url}}" mode="aspectFill"></image>
-				      	<text wx:if="{{item.columns.btn==true}}">竞标中</text>
-                <text wx:else>竞标结束</text>
-          </view>
-				</view>
-				<view class="conference-item-text">
-					<view class="conference-item-title">{{item.columns.name}}</view>
-					<view class="conference-item-info">
-						<text>公司评分</text>
-            <text>10</text>
-            <text>竞标人数</text>
-						<text>{{item.columns.tender_num}}</text>
-					</view>
-					<view class="conference-item-info">
-             <text>开始时间</text>
-             <text>{{item.columns.begin_date}}</text>
-             <text>结束时间</text>
-					   <text>{{item.columns.end_date}}</text>
-					</view>
-				</view>
-			</navigator>
-		</view>
-		<view class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop"></view>
-	</scroll-view>
+<view class="top">
+  <image class="img" lazy-load="true" mode="aspectFill" src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image>
+  <image class="photo-btn" src='../../images/photo.png' class="photo-btn" bindtap="choice"></image>
+</view>
+<view class='mid'>
+  <view data-index="{{true}}" class="{{isOne?'active':''}}" bindtap="selectType">最新动态</view>
+  <text class='fengexian'></text>
+  <view data-index="{{false}}" class="{{!isOne?'active':''}}" bindtap="selectType">人气排名</view>
+</view>
+<view class='con'>
+  <view class='item' wx:for="{{list}}" wx:key="{{item.id}}">
+    <view class='item-left'>
+      <image class='avator' mode='scaleToFill' src='{{item.avator}}'></image>
+    </view>
+    <view class='item-right'>
+      <view class='item-right-name'>{{item.name}}</view>
+      <view class='item-right-con'>{{item.con}}</view>
+      <view class='item-imgs'>
+        <image class='item-img' mode='scaleToFill' bindtap="imgYu" wx:for="{{item.imgs}}" wx:key="unique" wx:for-item="dImg" data-src="{{dImg}}" data-list="{{item.imgs}}" src='{{dImg}}'></image>
+      </view>
+      <view class='item-address'>
+        <text class='item-address-con'>{{item.address}}</text>
+        <image class='item-islike' src='{{item.isLike?"../../images/like.png":"../../images/liked.png"}}'></image>
+      </view>
+      <view class='item-time'>
+        <text class='item-time-con'>{{item.time}}</text>
+        <view class='item-share-box'>
+          <image class='item-share' src='../../images/share.png'></image>
+          <text class='item-fenxiang'>分享</text>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

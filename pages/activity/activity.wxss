@@ -1,47 +1,87 @@
-@import '../public/index.wxss';
-
-.goToTop image{
-  width: 70rpx;
-  height: 70rpx;
-}
-.conference-item{
+.top, .img {
+  height: 351rpx;
   width: 100%;
-  height: 148rpx;
-	padding: 20rpx;
-  background: #fff;
-  margin-bottom: 10rpx;
 }
-.conference-item-img{
-  position: relative;
-  float: left;
-	width: 150rpx;
-	height: 150rpx; 
-  border-radius: 20rpx;
-	overflow: hidden;
+.photo-btn {
+  position: absolute;
+  right: 57rpx;
+  top: 20rpx;
+  width: 50rpx;
+  height: 40rpx;
+  border: none;
 }
-.conference-item-img text{
-	position: absolute;
-	left: 0;
-	top: 0;
-	color: #fff;
-	font-size: 24rpx;
-	padding: 0 10rpx;
-  border-radius: 20rpx;
+.mid {
+  height: 72rpx;
+  display: flex;
+  line-height: 72rpx;
 }
-.conference-item-img image{
-	width: 100%;
-}
-
-.conference-item-title{
-	font-size: 27rpx;
-	color: rgb(37, 37, 37);
+.mid view {
+  box-sizing: border-box;
+  width: 50%;
   text-align: center;
+  background: #fff;
+  border-bottom: 1rpx solid #fff;
 }
-.conference-item-info{
-	display: flex;
+.active {
+  border-bottom: 1rpx solid #ff984b !important;
+  color: #ff984b;
 }
-.conference-item-info text{
-	flex: 1;
-  font-size: 25rpx;
+.fengexian {
+  width: 1rpx;
 }
-
+.item {
+  display: flex;
+  padding: 20rpx;
+}
+.item-left {
+  padding-right: 20rpx;
+}
+.avator {
+  width: 85rpx;
+  height: 85rpx;
+  border: none;
+}
+.item-right-con {
+  padding-top: 10rpx;
+  margin-bottom: 20rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.item-img {
+  width: 150rpx;
+  height: 150rpx;
+  border: none;
+  margin-right: 8rpx;
+}
+.item-address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10rpx;
+}
+.item-address-con {
+  color: #00756f;
+}
+.item-time, .item-share-box {
+  display: flex;
+  align-items: center;
+}
+.item-time text {
+  color: #959595;
+}
+.item-time-con {
+  margin-right: 80rpx;
+}
+.item-right-name {
+  color: #00756f;
+}
+.item-islike, .item-share {
+  width: 30rpx;
+  height: 27rpx;
+  border: none;
+}
+.item-fenxiang {
+  padding-left: 5rpx;
+}
