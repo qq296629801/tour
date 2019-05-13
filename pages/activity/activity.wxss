@@ -32,6 +32,8 @@
 .item {
   display: flex;
   padding: 20rpx;
+  margin-top: 2rpx;
+  background: #fff;
 }
 .item-left {
   padding-right: 20rpx;
