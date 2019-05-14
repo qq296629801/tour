@@ -7,11 +7,40 @@ Page({
    * 页面的初始数据
    */
   data: {
+    payType: '',
+    hidden: true,
     isOne: true,
     region: [],
     customItem: '全部',
     index: null,
-    array: ['询价采购', '集中供应']
+    array: ['询价采购', '集中供应'],
+    items: [
+      { name: '包周会员免费', value: 0 },
+      { name: '半年会员￥1000', value: 1 },
+      { name: '包年会员￥2000（推荐）', value: 2 }
+    ]
+  },
+  handlePublish () {
+    this.setData({
+      hidden: false
+    })
+  },
+  radioChange(e) {
+    this.setData({
+      payType: e.detail.value
+    })
+  },
+  weixinPay () {
+    console.warn('微信支付')
+    this.setData({
+      hidden: true
+    });  
+  },
+  alipay () {
+    console.warn('支付宝支付')
+    this.setData({
+      hidden: true
+    });  
   },
   selectType(e) {
     this.setData({

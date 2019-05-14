@@ -91,3 +91,13 @@
   height: 36rpx;
   border: none;
 }
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+.radio {
+  height: 70rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
