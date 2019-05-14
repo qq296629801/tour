@@ -23,33 +23,33 @@ Page({
     ],
     indexmenu: [
       {
-        'icon': './../../images/采购商.png',
+        'icon': './../../images/purchaser.png',
         'text': '采购商',
         'url': 'space'
       },
      
       {
-        'icon': './../../images/供求信息.png',
+        'icon': './../../images/supplyInfo.png',
         'text': '供求信息',
         'url': 'property'
       },
       {
-        'icon': './../../images/供应商.png',
+        'icon': './../../images/supplier.png',
         'text': '供应商',
         'url': 'question'
       },
       {
-        'icon': './../../images/关于我们.png',
+        'icon': './../../images/aboutUs.png',
         'text': '关于我们',
         'url': 'service'
       },
       {
-        'icon': './../../images/会务直播.png',
+        'icon': './../../images/liveBroadcast.png',
         'text': '会务直播',
         'url': 'au'
       },
       {
-        'icon': './../../images/招商入驻.png',
+        'icon': './../../images/investmentPromotion.png',
         'text': '招商入驻',
         'url': 'companyapply'
       }

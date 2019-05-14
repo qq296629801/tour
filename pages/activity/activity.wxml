@@ -1,6 +1,6 @@
 <view class="top">
   <image class="img" lazy-load="true" mode="aspectFill" src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640"></image>
-  <image class="photo-btn" src='../../images/photo.png' class="photo-btn" bindtap="choice"></image>
+  <image class="photo-btn" src='../../images/photo.png' bindtap="choice"></image>
 </view>
 <view class='mid'>
   <view data-index="{{true}}" class="{{isOne?'active':''}}" bindtap="selectType">最新动态</view>

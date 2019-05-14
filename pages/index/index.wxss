@@ -67,6 +67,7 @@
   padding-right: 10rpx;
   display: flex;
   position: relative;
+  background: #fff;
 }
 .news-con {
   width: 72%;
@@ -85,7 +86,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	background: #fff;
-  margin-bottom: 10rpx;
+  margin-bottom: 1rpx;
 }
 .index-menu-item{
   width: 33.3%;

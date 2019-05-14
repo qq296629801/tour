@@ -2,11 +2,11 @@
 <!-- <import src="../public/item.wxml" /> -->
   <view class="box">
     <view class="loca">
-      <image src="../../images/地理位置图标.png"></image>
+      <image src="../../images/position.png"></image>
       <text>长沙</text>
     </view>
     <view class="search-bar">
-      <image src="../../images/搜索.png"></image>
+      <image src="../../images/search.png"></image>
       <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#fff" />
     </view>
   </view>

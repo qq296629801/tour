@@ -1,40 +1,35 @@
-<!-- 导入Item模板 -->
-<import src="../public/item.wxml"/>
-
-<view class="wrapper">
-  <!-- 滚动广告 begin -->
-  <view class="slider-wrapper">
-    <swiper indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-      <block wx:for="{{imgUrls}}" wx:key="*this">
-        <swiper-item>
-          <image src="{{item}}" class="slide-image"/>
-        </swiper-item>
-      </block>
-    </swiper>
-  </view>
-  <!-- 滚动广告 end -->
-  <!-- 正在直播 begin -->
-  <view class="row-container">
-    <navigator class="header">
-      <view class="left">
-        <text>正在直播</text>
-      </view>
-      <view class="right">
-        <text>查看更多直播</text>
-      </view>
-    </navigator>
-    <view class="content-wrapper">
-      <block wx:for="{{liveList}}" wx:key="avid">
-        <!-- 使用正在直播模板，传入当前循环对象item -->
-        <template is="jiefItem2" data="{{...item}}"/>
-      </block>
-    </view>
-  </view>
-  <!-- 正在直播 end -->
-
-  <!-- 底部版权 begin -->
-  <include src="../public/footer.wxml"/>
-  <!-- 底部版权 end -->
-
+<view class="publish-con">
+  <textarea placeholder="要发布的内容或项目名称" auto-focus />
 </view>
+<view class='mid'>
+  <view data-index="{{true}}" class="{{isOne?'active':''}}" bindtap="selectType">发布图片</view>
+  <text class='fengexian'></text>
+  <view data-index="{{false}}" class="{{!isOne?'active':''}}" bindtap="selectType">发布视频</view>
+</view>
+<view class='publish-pic'>
+  <image src='../../images/add.png' bindtap="choice"></image>
+</view>
+<view class='form-item'>
+<image class='img-1' src="../../images/address.png"></image>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      <text wx:if="{{region.length>0}}">{{region[0]}} / {{region[1]}} / {{region[2]}}
+    </text>
+      <text class='picker-tips' wx:else>请选择您的位置</text>
+    </view>
+  </picker>
+</view>
+<view class='form-item'>
+<image class='img-2' src="../../images/phone.png"></image>
+  <input class="input" type="number" placeholder="请输入电话号码" auto-focus />
+</view>
+<view class='form-item'>
+<image class='img-3' src="../../images/publishType.png"></image>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      <text wx:if="{{index==0||index==1}}">{{array[index]}}</text>
+      <text class='picker-tips' wx:else>请选择发布类别：询价采购/集中供应</text>
+    </view>
+  </picker>
+</view>
+<button class="publish-btn">立 即 发 布</button> 

@@ -1,404 +1,93 @@
-/* 公共 */
-page {
-  overflow: auto;
-  min-height: 100%;
-  background-color: #f4f4f4;
-}
-@media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dprpx) {
-  .bili-icon-tv,
-  .bili-icon-tech,
-  .bili-icon-music,
-  .bili-icon-movie,
-  .bili-icon-live,
-  .bili-icon-kichiku,
-  .bili-icon-game,
-  .bili-icon-fashion,
-  .bili-icon-douga,
-  .bili-icon-dance,
-  .bili-icon-bangumi,
-  .bili-icon-search,
-  .bili-icon-history,
-  .bili-icon-fav,
-  .bili-icon-history-2,
-  .bili-icon-filter-hover,
-  .bili-icn-filter,
-  .bili-icon-upload,
-  .bili-icon-circle-del,
-  .bili-icon-arrow,
-  .bili-icon-del {
-    background-size: 274rpx 228rpx;
-    display: block;
-  }
-}
-@media screen and (-webkit-min-device-pixel-ratio: 2.0), screen and (min--moz-device-pixel-ratio: 2.0), screen and (min-device-pixel-ratio: 2.0), screen and (min-resolution: 2.0dprpx) {
-  .bili-icon-tv,
-  .bili-icon-tech,
-  .bili-icon-music,
-  .bili-icon-movie,
-  .bili-icon-live,
-  .bili-icon-kichiku,
-  .bili-icon-game,
-  .bili-icon-fashion,
-  .bili-icon-douga,
-  .bili-icon-dance,
-  .bili-icon-bangumi,
-  .bili-icon-search,
-  .bili-icon-history,
-  .bili-icon-fav,
-  .bili-icon-history-2,
-  .bili-icon-filter-hover,
-  .bili-icon-filter,
-  .bili-icon-upload,
-  .bili-icon-circle-del,
-  .bili-icon-arrow,
-  .bili-icon-del {
-    background-size: 274rpx 228rpx;
-    display: block;
-  }
-}
-@media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dprpx) {
-  .bilibili-index-sprite {
-    background-size: 30rpx 462rpx;
-  }
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2.0), screen and (min--moz-device-pixel-ratio: 2.0), screen and (min-device-pixel-ratio: 2.0), screen and (min-resolution: 2.0dprpx) {
-  .bilibili-index-sprite {
-    background-size: 30rpx 462rpx;
-  }
-}
-/* 顶部Logo、搜索条 */
-.logo {
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.nav-bar {
-  height: 40rpx;
-  line-height: 40rpx;
-  color: #fff;
-  background-color: #fff;
-  font-size: 14rpx;
-  z-index: 10010;
-  border-bottom: 1rpx solid #e7e7e7;
-  overflow: hidden;
-}
-.nav-bar .nav-wrp {
-  position: relative;
-  height: 100%;
-  z-index: 100;
-  background-color: #fff;
-}
-.nav-bar .logo {
-  float: left;
-  margin-top: 6rpx;
-  display: block;
-  width: 63rpx;
-  height: 28rpx;
-  background-size: 63rpx 28rpx !important;
-  margin-left: 18rpx;
-}
-.nav-bar .cell {
-    float: right;
-    width: 44rpx;
-    height: 40rpx;
-    position: relative;
-    box-sizing: border-box;
-    margin-right: 5rpx;
-}
-.nav-bar .cell .nav-icon {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -11rpx;
-    margin-top: -11rpx;
-}
-.bili-icon-history {
-    background-position: -22rpx -206rpx;
-    width: 22rpx;
-    height: 22rpx;
-}
-.bili-icon-search {
-    background-position: 0 -206rpx;
-    width: 22rpx;
-    height: 22rpx;
-}
-/* 主内容 */
-.wrapper {
-    position: relative;
-    overflow-x: hidden;
-}
-.flex-bar {
-    padding: 0 0.5rem;
-    height: 45rpx;
-    line-height: 45rpx;
-    width: 100%;
-    position: relative;
-    background-color: #fff;
-    box-sizing: border-box;
-}
-.flex-bar .flex-bar-in {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  flex-direction: row;
-}
-.flex-bar .flex-bar-in .on {
-    border-bottom: 4rpx solid #de698c;
-}
-.flex-bar .flex-bar-in .li {
-    width: 18%;
-    height: 100%;
-    text-align: center;
-    box-sizing: border-box;
-    margin: 0 5rpx;
-}
-.flex-bar .flex-bar-in .a {
-    display: block;
-    color: #444;
-}
-.slider-wrapper {
-    position: relative;
-    width: 100%;
-    height: 175rpx;
-    overflow: hidden;
-    margin-bottom: 10rpx;
-}
-.slide-image, swiper {
+.publish-con textarea {
   width: 100%;
-  height: 175rpx;
+  height: 213rpx;
+  background: #fff;
+  padding: 26rpx 29rpx;
+  box-sizing: border-box;
 }
-.row-container {
-    position: relative;
-    width: 100%;
-    margin-bottom: 10rpx;
-    background-color: #fff;
-    box-sizing: border-box;
+.fengexian {
+  width: 1rpx;
 }
-.row-container .header {
-    display: block;
-    height: 44rpx;
-    line-height: 44rpx;
-    padding: 0 12rpx;
+.mid {
+  margin-top: 1rpx;
+  height: 72rpx;
+  display: flex;
+  line-height: 72rpx;
 }
-.row-container .header .left {
-    float: left;
-    color: #444;
-    font-size: 14rpx;
-    position: relative;
-    padding-left: 5rpx;
+.mid view {
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+  background: #fff;
+  border-bottom: 1rpx solid #fff;
 }
-.bilibili-index-sprite {
-    display: inline-block;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 12rpx;
-    left: 0;
+.active {
+  border-bottom: 1rpx solid #ff984b !important;
+  color: #ff984b;
 }
-.bilibili-index-hot {
-    background-position: -5rpx -215rpx;
-    width: 20rpx;
-    height: 20rpx;
+.publish-pic {
+  margin-top: 2rpx;
+  height: 217rpx;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  background: #fff;
 }
-.row-container .header .right {
-    float: right;
-    font-size: 14rpx;
-    color: #999;
-    position: relative;
-    padding-right: 5rpx;
+.publish-pic image {
+  width: 158rpx;
+  height: 158rpx;
+  border: none;
 }
-.row-container .header .hot {
-    font-size: 13rpx;
-    color: #ffb30f;
-    padding: 0 0 0 25rpx;
+.form-item {
+  position: relative;
+  margin-top: 2rpx;
+  background: #fff;
+  height: 90rpx;
+  padding-left: 80rpx;
+  padding-right: 20rpx;
+  box-sizing: border-box;
 }
-.bilibili-index-ranking {
-    background-position: -5rpx -65rpx;
-    width: 20rpx;
-    height: 20rpx;
+.form-item input, picker {
+  height: 90rpx;
+  line-height: 90rpx;
 }
-.row-container .content-wrapper {
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    padding: 0 6rpx;
-    box-sizing: border-box;    
+.picker {
+  display: flex;
+  flex-wrap: nowrap;
 }
-.row-container img {
-    vertical-align: top;
+.picker-tips {
+  color: #888;
 }
-.row-container .content-list {
-    width: 50%;
-    display: inline-block;
-    position: relative;
-    padding: 0 6rpx 24rpx;
-    vertical-align: top;
-    box-sizing: border-box;
+.publish-btn {
+  background: #009e96;
+  width: 497rpx;
+  height: 70rpx;
+  border-radius: 50rpx;
+  margin-top: 126rpx;
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 70rpx;
 }
-.row-container .content-list .item {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;  
+.img-1 {
+  position: absolute;
+  left: 25rpx;
+  top: 28rpx;
+  width: 30rpx;
+  height: 35rpx;
+  border: none;
 }
-.row-container .content-list .item .top {
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 0;
-    padding-bottom: 63%;
-    box-sizing: border-box;  
+.img-2 {
+  position: absolute;
+  left: 23rpx;
+  top: 28rpx;
+  width: 35rpx;
+  height: 35rpx;
+  border: none;
 }
-.row-container .content-list .info {
-    position: relative;
-    display: block;
-    width: 100%;
-    padding-top: 5rpx;
-    box-sizing: border-box;  
-}
-.row-container .content-list .item .cover-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transition: opacity .3s;
-    transition: opacity .3s;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 5rpx;
-    box-sizing: border-box;  
-}
-.row-container .content-list .info .title {
-    width: 100%;
-    max-height: 36rpx;
-    overflow: hidden;
-    color: #444;
-    font-size: 13rpx;
-    box-sizing: border-box;  
-    margin-bottom: 4rpx;
-}
-.row-container .left {
-    float: left;
-    box-sizing: border-box;  
-}
-.row-container .content-list .info .cell {
-    position: relative;
-    width: 50%;
-    font-size: 13rpx;
-    color: #999;
-    padding-left: 18rpx;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-}
-.bilibili-index-play {
-    background-position: -5rpx -425rpx;
-    width: 15rpx;
-    height: 11rpx;
-    top: 50%;
-    margin-top: -6rpx;
-}
-.bilibili-index-danmu {
-    background-position: -5rpx -446rpx;
-    width: 15rpx;
-    height: 11rpx;
-    top: 50%;
-    margin-top: -6rpx;
-}
-.bilibili-index-live {
-    background-position: -5rpx -155rpx;
-    width: 20rpx;
-    height: 20rpx;
-}
-.bilibili-index-arrow {
-    background-position: -5rpx -395rpx;
-    width: 20rpx;
-    height: 20rpx;
-    right: 0;
-    left: auto;
-}
-.row-container .content-list .info .avatar {
-    position: relative;
-    width: 42rpx;
-    height: 42rpx;
-    border-radius: 21rpx;
-    border: 2rpx solid #fff;
-    top: -26rpx;
-    left: 7rpx;
-    z-index: 10;
-    box-sizing: border-box;
-}
-.row-container .content-list .info .avatar image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-sizing: border-box;
-}
-.row-container .content-list .info .user {
-    position: absolute;
-    left: 0;
-    top: 5rpx;
-    width: 100%;
-    padding-left: 56rpx;
-    box-sizing: border-box;
-}
-.row-container .text-overflow {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-.row-container .content-list .info .name {
-    font-size: 13rpx;
-    color: #444;
-    line-height: 44rpx;
-}
-.row-container .content-list .info .desp {
-    font-size: 13rpx;
-    color: #999;
-    padding-top: 2rpx;
-}
-.row-container .content-list .info .online {
-    position: absolute;
-    top: 25rpx;
-    width: 48rpx;
-    padding: 0 1rpx;
-    color: #fff;
-    background-color: #ccc;
-    border-radius: 6rpx;
-    text-align: center;
-    height: 20rpx;
-    line-height: 20rpx;
-    font-size: 12rpx;
-}
-.bilibili-index-bangumi {
-    background-position: -5rpx -365rpx;
-    width: 20rpx;
-    height: 20rpx;
-}
-.row-container .bangumi-list {
-    width: 33.333333%;
-}
-.row-container .bangumi-list .top {
-    padding-top: 75%;
-}
-.row-container .content-list .info .bangumi-title {
-    text-align: center;
-    font-size: 14rpx;
-    line-height: 46rpx;
-    color: #444;
-}
-.row-container .content-list .info .bangumi-page {
-    text-align: center;
-    font-size: 13rpx;
-    color: #de698c;
+.img-3 {
+  position: absolute;
+  left: 23rpx;
+  top: 27rpx;
+  width: 35rpx;
+  height: 36rpx;
+  border: none;
 }

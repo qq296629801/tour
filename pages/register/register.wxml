@@ -9,7 +9,7 @@
         </view>
       </view>
       <view class="form-bottom">
-        <button class="register-btn">注 册</button> 
+        <button class="register-btn">注 册</button>
         <view>
           <text class="tips">点击“注册”即代表您已经阅读并同意</text>
           <text class="tips tips-1">《用户协议》</text>

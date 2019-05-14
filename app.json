@@ -39,25 +39,25 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "",
+        "text": "首页",
         "iconPath": "images/home.png",
         "selectedIconPath": "images/home_se.png"
       },
       {
         "pagePath": "pages/activity/activity",
-        "text": "",
+        "text": "动态",
         "iconPath": "images/talk.png",
         "selectedIconPath": "images/talk_se.png"
       },
       {
         "pagePath": "pages/livelist/livelist",
-        "text": "",
+        "text": "发布",
         "iconPath": "images/tender.png",
         "selectedIconPath": "images/tender_se.png"
       },
       {
         "pagePath": "pages/puuser/puuser",
-        "text": "",
+        "text": "我的",
         "iconPath": "images/user.png",
         "selectedIconPath": "images/user_se.png"
       }
