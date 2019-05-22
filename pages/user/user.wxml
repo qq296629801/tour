@@ -1,36 +1,103 @@
-
-<view class="container">
-<view class="personal_info">
-	<view class="photo_wrap">
-   <image src="{{userInfo.avatarUrl}}" class="photo"></image>
+<view class='btns'>
+  <button>编辑</button>
+  <button>完成</button>
+</view>
+<view class='avatar-box'>
+  <text class='tips'>我的头像</text>
+  <image class='avatar-img' mode='scaleToFill' src='{{userInfo.avatar}}'></image>
+</view>
+<view class='input-box'>
+  <text class='tips'>真实姓名</text>
+  <input class='input' placeholder='请输入真实姓名'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>手机号码</text>
+  <input class='input' placeholder='请输入手机号码'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>公司单位</text>
+  <input class='input' placeholder='请输入公司单位'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>部门职务</text>
+  <input class='input' placeholder='请输入部门职务'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>业务专长</text>
+  <input class='input' placeholder='请输入业务专长'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>邮箱</text>
+  <input class='input' placeholder='请输入邮箱'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>微信号</text>
+  <input class='input' placeholder='请输入微信号'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>QQ</text>
+  <input class='input' placeholder='请输入QQ'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>常住城市</text>
+  <input class='input' placeholder='请输入常住城市'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>生日</text>
+  <input class='input' placeholder='请输入生日'></input>
+</view>
+<view class='input-box box-empty'>
+  <text class='tips tips-empty'>其他信息</text>
+</view>
+<view class='input-box'>
+  <text class='tips'>性别</text>
+  <input class='input' placeholder='请输入性别'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>个人介绍</text>
+  <input class='input' placeholder='请输入个人介绍'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>地址</text>
+  <input class='input' placeholder='请输入地址'></input>
+</view>
+<view class='input-box'>
+  <text class='tips'>名片公开</text>
+  <input class='input' placeholder='请输入名片公开'></input>
+</view>
+<view class='input-box box-empty'>
+  <text class='tips tips-empty'>教育经历</text>
+  <text class='add-btn'>新增</text>
+</view>
+<view class='input-box list-box' wx:for='{{userInfo.educations}}' wx:key='*this'>
+  <view class='list-box-con'>
+      <text class='tips'>学校名称</text>
+      <input class='input' value='{{item.college}}' placeholder='请输入学校名称'></input>
+    </view>
+    <view class='list-box-con'>
+      <text class='tips'>在校时间</text>
+      <input class='input' value='{{item.time}}' placeholder='请输入在校时间'></input>
+    </view>
+    <view class='list-box-con'>
+      <text class='tips'>心得体会</text>
+      <input class='input' value='{{item.desc}}' placeholder='请输入心得体会'></input>
+    </view>
+</view>
+<view class='input-box box-empty'>
+  <text class='tips tips-empty'>工作经历</text>
+  <text class='add-btn'>新增</text>
+</view>
+<view class='input-box list-box' wx:for='{{userInfo.jobs}}' wx:key='*this'>
+  <view class='list-box-con'>
+    <text class='tips'>工作岗位</text>
+    <input class='input' value='{{item.job}}' placeholder='请输入工作岗位'></input>
   </view>
-	<view class="nickname">
-		{{userInfo.nickName}}
-	</view>
+  <view class='list-box-con'>
+    <text class='tips'>工作时间</text>
+    <input class='input' value='{{item.time}}' placeholder='请输入工作时间'></input>
+  </view>
+  <view class='list-box-con'>
+    <text class='tips'>心得体会</text>
+    <input class='input' value='{{item.desc}}' placeholder='请输入心得体会'></input>
+  </view>
 </view>
-
-
-<!-- 工作台 -->
-  <view class="index-menu">
-		<navigator class="index-menu-item" wx:for="{{indexmenu}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
-			<image src="{{item.icon}}"></image>
-			<text>{{item.text}}</text>
-		</navigator>
-	</view>
-  
-<view class="wode_item_wrap">
-	<view class="wode_item" wx:for="{{mode.data}}" wx:key="{{item.name}}">
-		{{item.name}}
-    <navigator class="header" url="../{{item.url}}/{{item.url}}">
-      <span class="arrow_wrap">
-        <image src="../../images/xiangyou1.png"></image>
-      </span>
-     </navigator>
-	</view>
-</view>
-<view class="wode_out">退出</view>
-<!-- 底部版权 begin -->
-<include src="../public/footer.wxml"/>
-<!-- 底部版权 end -->
-</view>
-

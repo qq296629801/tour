@@ -1,53 +1,76 @@
-var app = getApp();
-
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    userInfo: {},
-    mode: {
-      data: [ { url: 'pumytender', name: '我的标的' }, { url: '', name: '我的直播' }, { url: '', name: '联系我们' }]
+    userInfo: {
+      avatar: 'http://img.52z.com/upload/news/image/20180108/20180108122831_73637.jpg',
+      name: '张山峰',
+      number: '7849005'
     },
-    indexmenu: [
-      
-      {
-        'icon': './../../images/icon_07.png',
-        'text': '资质认证',
-        'url': 'au'
-      },
-      {
-        'icon': './../../images/icon_13.png',
-        'text': '入驻申请',
-        'url': 'companyapply'
-      },
-      {
-        'icon': './../../images/icon_13.png',
-        'text': '产品发布',
-        'url': 'apply'
-      },
-      {
-        'icon': './../../images/icon_05.png',
-        'text': '发标',
-        'url': 'activityapply'
-      },
-
+    itemList: [
+      { key: 1, url: '../register/register', name: '邀请好友', imgPath: '../../images/jiangli.png' },
+      { key: 2, url: '../register/register', name: '我的关注', imgPath: '../../images/watch.png' },
+      { key: 3, url: '../register/register', name: '我的发布', imgPath: '../../images/publish.png' },
+      { key: 4, url: '../register/register', name: '帮助和反馈', imgPath: '../../images/help.png' },
+      { key: 5, url: '../register/register', name: '设置', imgPath: '../../images/set.png' }
     ]
-
   },
-  onLoad: function () {
-    wx.login({
-      success(res) {
-        if (res.code) {
-          // 发起网络请求
-          wx.request({
-            url: 'http://localhost:8080/wx/toLogin',
-            data: {
-              code: res.code
-            }
-          })
-        } else {
-          console.log('登录失败！' + res.errMsg)
-        }
-      }
-    })
-  }
 
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+    
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+    
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+    
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    
+  }
 })

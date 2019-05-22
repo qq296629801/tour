@@ -1,58 +1,75 @@
-var app = getApp();
-
 Page({
-  	data: {
-  		userInfo: {},
-      mode: {
-        data: [{ url: 'mycompany', name: '我的公司' }, { url: 'myproduct', name: '我的产品' }, { url: 'mytender', name: '我的标的' }, { url: '', name: '我的直播' }, { url: '', name: '联系我们' }]
-      }, indexmenu: [
 
-        {
-          'icon': './../../images/icon_07.png',
-          'text': '资质认证',
-          'url': 'au'
-        },
-        {
-          'icon': './../../images/icon_13.png',
-          'text': '入驻申请',
-          'url': 'companyapply'
-        },
-        {
-          'icon': './../../images/icon_13.png',
-          'text': '产品发布',
-          'url': 'apply'
-        },
-        {
-          'icon': './../../images/icon_05.png',
-          'text': '发标',
-          'url': 'activityapply'
-        },
-
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    userInfo: {
+      avatar: 'http://img.52z.com/upload/news/image/20180108/20180108122831_73637.jpg',
+      educations: [
+        { college: '湖南大学', time: '2014-07-01 至 2018-08-08', desc: '好好学习，天天向上' },
+        { college: '湖南大学', time: '2014-07-01 至 2018-08-08', desc: '好好学习，天天向上' }
+      ],
+      jobs: [
+        { job: '厨师', time: '2014-07-01 至 2018-08-08', desc: '好好学习，天天向上' },
+        { job: '程序员', time: '2014-07-01 至 2018-08-08', desc: '好好学习，天天向上' }
       ]
-      
-  	},
-  	onLoad: function() {
-  		var that = this;
-      wx.openSetting({
-        success(res) {
-          console.log(res.authSetting)
-           res.authSetting = {
-             "scope.userInfo": true,
-             "scope.userLocation": true
-          }
-        }
-      });
+    }
+  },
 
-  		wx.login({
-        success: function () {
-          wx.getUserInfo({
-            success: function (res) {
-              that.setData({
-                userInfo: res.userInfo
-              })
-            }
-          })
-        }
-      });
-  	}
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+    
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+    
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+    
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+    
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    
+  }
 })

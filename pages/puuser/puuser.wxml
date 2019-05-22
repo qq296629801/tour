@@ -1,41 +1,28 @@
-
-<view class="container">
-<view class="personal_info">
-	<view class="photo_wrap">
-   <image src="{{userInfo.avatarUrl}}" class="photo"></image>
+<navigator class="top-box" url='../user/user'>
+  <image class='img' src='{{userInfo.avatar}}'></image>
+  <view class='top-box-right'>
+    <view class='top-box-con-left'>
+      <view>{{userInfo.name}}</view>
+      <view>联盟号：{{userInfo.number}}</view>
+    </view>
+    <view class='top-box-con-right'>
+      <text>基本资料 </text>
+      <image class='arrow' src='../../images/xiangyou1.png'></image>
+    </view>
   </view>
-	<view class="nickname">
-		{{userInfo.nickName}}
-	</view>
+</navigator>
+<view class='con-item'>
+  <view class='con-item-box'>
+    <image class='item-img' src='../../images/package.png'></image>
+    <text>奖金收益</text>
+  </view>
+  <text class='money'>{{'1000.00'}} 元</text>
+  <button class='get-money-btn' bindtap="handleGetMoney">提 现</button>
 </view>
-
-
-<!-- 工作台 -->
-  <view class="index-menu">
-		<navigator class="index-menu-item" wx:for="{{indexmenu}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
-			<image src="{{item.icon}}"></image>
-			<text>{{item.text}}</text>
-		</navigator>
-	</view>
-
-
-<view class="wode_item_wrap">
-	<view class="wode_item" wx:for="{{mode.data}}" wx:key="{{item.name}}">
-		{{item.name}}
-    <navigator class="header" url="../{{item.url}}/{{item.url}}">
-      <span class="arrow_wrap">
-        <image src="../../images/xiangyou1.png"></image>
-      </span>
-     </navigator>
-	</view>
-</view>
-
-<view class="wode_out">
-  <navigator url="../login/login">退出</navigator>
-</view>
-
-<!-- 底部版权 begin -->
-<include src="../public/footer.wxml"/>
-<!-- 底部版权 end -->
-</view>
-
+<navigator class='con-item' wx:for="{{itemList}}" wx:key="{{item.key}}" url='{{item.url}}'>
+  <view class='con-item-box'>
+    <image class='item-img' src='{{item.imgPath}}'></image>
+    <text>{{item.name}}</text>
+  </view>
+  <image class='arrow' src='../../images/xiangyou1.png'></image>
+</navigator>
