@@ -1,35 +1,25 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/user/user",
-    "pages/puuser/puuser",
-    "pages/activity/activity",
-    "pages/activityapply/activityapply",
-    "pages/activitydetail/activitydetail",
-    "pages/au/au",
-    "pages/companyapply/companyapply",
-    "pages/companydetail/companydetail",
-    "pages/companylist/companylist",
-    "pages/livelist/livelist",
+    "pages/trends/trends",
+    "pages/publish/publish",
+    "pages/my/my",
     "pages/login/login",
     "pages/register/register",
-    "pages/mycompany/mycompany",
-    "pages/mylive/mylive",
-    "pages/myproduct/myproduct",
-    "pages/mytender/mytender",
-    "pages/productdetail/productdetail",
-    "pages/productlist/productlist",
-    "pages/question/question",
-    "pages/service/service",
-    "pages/pumytender/pumytender",
-    "pages/puactivitydetail/puactivitydetail"
+    "pages/user/user",
+    "pages/purchaser/purchaser",
+    "pages/supplyinfo/supplyinfo",
+    "pages/supplier/supplier",
+    "pages/aboutus/aboutus",
+    "pages/live/live",
+    "pages/investment/investment",
+    "pages/company/company"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#009f96",
-    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#009e96",
     "navigationBarTitleText": "农旅配套联盟",
-    "backgroundColor": "#fff",
-    "backgroundTextStyle": "dark"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#fff",
@@ -44,19 +34,19 @@
         "selectedIconPath": "images/home_se.png"
       },
       {
-        "pagePath": "pages/activity/activity",
+        "pagePath": "pages/trends/trends",
         "text": "动态",
         "iconPath": "images/talk.png",
         "selectedIconPath": "images/talk_se.png"
       },
       {
-        "pagePath": "pages/livelist/livelist",
+        "pagePath": "pages/publish/publish",
         "text": "发布",
         "iconPath": "images/tender.png",
         "selectedIconPath": "images/tender_se.png"
       },
       {
-        "pagePath": "pages/puuser/puuser",
+        "pagePath": "pages/my/my",
         "text": "我的",
         "iconPath": "images/user.png",
         "selectedIconPath": "images/user_se.png"

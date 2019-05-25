@@ -1,45 +1,39 @@
-<!-- 导入Item模板 -->
-<!-- <import src="../public/item.wxml" /> -->
-  <view class="box">
-    <view class="loca">
-      <image src="../../images/position.png"></image>
-      <text>长沙</text>
-    </view>
-    <view class="search-bar">
-      <image src="../../images/search.png"></image>
-      <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#fff" />
-    </view>
+<view class="box">
+  <view class="loca">
+    <image src="../../images/position.png"></image>
+    <text>长沙</text>
   </view>
-  <!-- 轮播 -->
-  <view class="lunbo">
+  <view class="search-bar">
+    <image src="../../images/search.png"></image>
+    <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#fff" />
+  </view>
+</view>
+<view class="lunbo">
   <swiper class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
     <block wx:for="{{banner}}" wx:key="unique">
       <swiper-item>
-          <navigator url="{{item.target}}">
-            <image src="{{item.url}}" mode="aspectFill" class="banner" lazy-load="true"></image>
-          </navigator>
+        <navigator url="{{item.target}}">
+          <image src="{{item.url}}" mode="aspectFill" class="banner" lazy-load="true"></image>
+        </navigator>
       </swiper-item>
     </block>
   </swiper>
+</view>
+<view class="news-box">
+  <view class="news">
+    <text class="news-tips">最新公告：</text>
+    <text class="news-con">我的林林去哪儿了，告诉她，我爱她一万年</text>
+    <text class="more">···</text>
   </view>
-  <!-- 文字广告 -->
-  <view class="news-box">
-    <view class="news">
-      <text class="news-tips">最新公告：</text>
-      <text class="news-con">我的林林去哪儿了，告诉她，我爱她一万年</text>
-      <text class="more">···</text>
-    </view>
-  </view>
-  <!-- 工作台 -->
-  <view class="index-menu-box">
-    <navigator class="index-menu-item" wx:for="{{indexmenu}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
-      <image src="{{item.icon}}" lazy-load="true"></image>{{item.text}}
-    </navigator>
-  </view>
-  <!-- 公司 begin -->
+</view>
+<view class="index-menu-box">
+  <navigator class="index-menu-item" wx:for="{{indexmenu}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
+    <image src="{{item.icon}}" lazy-load="true"></image>{{item.text}}
+  </navigator>
+</view>
 <view class="tuijian">
-      <navigator class="index-menu-item tuijian-box" wx:for="{{shops}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
-      {{item.text}}
-      <image class="img" src="{{item.url}}" lazy-load="true"></image>
-    </navigator>
+  <navigator class="index-menu-item tuijian-box" wx:for="{{shops}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
+    {{item.text}}
+    <image class="img" src="{{item.url}}" lazy-load="true"></image>
+  </navigator>
 </view>

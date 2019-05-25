@@ -1,0 +1,54 @@
+<view class="lunbo">
+  <swiper class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
+    <block wx:for="{{banner}}" wx:key="unique">
+      <swiper-item>
+        <navigator url="{{item.target}}">
+          <image src="{{item.url}}" mode="aspectFill" class="banner" lazy-load="true"></image>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="news-box">
+  <view class="news">
+    <text class="news-tips">最新公告：</text>
+    <text class="news-con">我的林林去哪儿了，告诉她，我爱她一万年</text>
+    <text class="more">···</text>
+  </view>
+</view>
+<view class='info'>
+  <view class='info-top'>
+    <view class='company-logo-box'>
+      <image class='company-logo' src='{{info.logo}}'></image>
+    </view>
+    <view class='info-top-right'>
+      <view class='company-name'>{{info.name}}</view>
+      <view class='company-hot'>
+        <text class='font-color'>{{info.score}} 分</text>
+        <text class='font-color'>浏览量：{{info.num}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='info-bottom'>
+    <image class='address-img' src='../../images/location.png'></image>
+    <text class='address'>{{info.address}}</text>
+  </view>
+</view>
+<view class='company-introduce'>
+  <view class='company-introduce-color'>公司简介：</view>
+  <text class='company-introduce-color'>{{info.introduce}}</text>
+</view>
+<view class='img-item-top'>景区图片</view>
+<view class="img-wrap">
+  <view class="img-box" wx:for="{{info.imgs}}" wx:key="*this">
+    <image class="img-item" src="{{item.url}}" lazy-load="true"></image>
+    <text class='img-title'>{{item.title}}</text>
+  </view>
+</view>
+<view class='img-item-top'>特色景点</view>
+<view class="img-wrap">
+  <view class="img-box" wx:for="{{info.imgss}}" wx:key="*this">
+    <image class="img-item" src="{{item.url}}" lazy-load="true"></image>
+    <text class='img-title'>{{item.title}}</text>
+  </view>
+</view>

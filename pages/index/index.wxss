@@ -86,11 +86,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	background: #fff;
-  margin-bottom: 1rpx;
+  margin-bottom: 10rpx;
 }
 .index-menu-item{
   width: 33.3%;
-  padding: 10rpx 0;
+  padding: 20rpx 0;
 	display: flex;
   justify-content: center;
   align-items: center;

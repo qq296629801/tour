@@ -1,0 +1,87 @@
+.item {
+  background: #fff;
+  margin-bottom: 10rpx;
+  padding: 0 36rpx;
+  box-sizing: border-box;
+}
+.item-top {
+  padding: 20rpx 0;
+  display: flex;
+  align-items: center;
+}
+.name {
+  margin-right: 17rpx;
+}
+.item-top-right {
+  margin-left: 36rpx;
+  width: 100%;
+}
+.item-bottom {
+  padding: 20rpx 0;
+  border-top: 1rpx solid #f2f2f2;
+}
+.avatar-img {
+  height: 85rpx;
+  width: 85rpx;
+  border-radius: 50%;
+}
+.company-name {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item-top-right-bottom {
+  width: 100%;
+  display: flex;
+  margin-top: 10rpx;
+}
+.item-top-right-bottom, .img-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img-box {
+  width: 20%;
+}
+.phone-img {
+  width: 30rpx;
+  height: 38rpx;
+  border: none;
+}
+.like-img {
+  width: 38rpx;
+  height: 38rpx;
+  border: none;
+}
+.city {
+  width: 105rpx;
+  height: 30rpx;
+  background: #009e96;
+  line-height: 30rpx;
+  color: #fff;
+  font-size: 20rpx;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+.item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+.city-box {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.font-color {
+  color: #898989;
+}

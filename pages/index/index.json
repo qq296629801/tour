@@ -1,4 +1,6 @@
 {
-    "enablePullDownRefresh": true,
-    "navigationBarTitleText": "农旅配套联盟"
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#009e96",
+    "navigationBarTitleText": "农旅配套联盟",
+    "navigationBarTextStyle": "white"
 }

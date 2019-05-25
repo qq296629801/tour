@@ -1,0 +1,26 @@
+<view class='item' wx:for='{{list}}' wx:key='*this' data-id='{{item.id}}' bindtap='toDetail'>
+  <view class='item-top'>
+    <view class='item-top-left'>
+      <image class='avatar-img' mode='scaleToFill' src='{{item.avatar}}'></image>
+    </view>
+    <view class='item-top-right'>
+      <view class='item-top-right-top'>
+        <text class='name'>{{item.name}}</text>
+        <text class='font-color'>{{item.title}}</text>
+      </view>
+      <view class='item-top-right-bottom'>
+        <text class='company-name font-color'>{{item.companyName}}</text>
+        <view class='img-box'>
+          <image class='phone-img' src='../../images/phone.png'></image>
+          <image class='like-img' src='{{item.isLike?"../../images/like.png":"../../images/liked.png"}}'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='item-bottom'>
+    <text class='desc font-color'>{{item.desc}}</text>
+    <view class='city-box'>
+      <button class='city'>{{item.city}}</button>
+    </view>
+  </view>
+</view>
