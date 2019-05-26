@@ -126,3 +126,50 @@
 .img-title {
   color: #787878;
 }
+.foot {
+  height: 90rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+.foot-btn {
+  width: 298rpx;
+  background: #009e96;
+  height: 90rpx;
+  color: #fff;
+  font-size: 24rpx;
+  line-height: 90rpx;
+  text-align: center;
+}
+.foot-left {
+  width: calc(100% - 298rpx);
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot-item {
+  width: 33.3%;
+  height: 90rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.foot-item text {
+  margin-top: 4rpx;
+  font-size: 24rpx;
+  color: #a6a6a6;
+}
+.foot-img {
+  width: 30rpx;
+  height: 30rpx;
+  border: none;
+}
+.empty {
+  height: 90rpx;
+  margin-top: 10rpx;
+}

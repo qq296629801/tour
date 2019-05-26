@@ -13,7 +13,8 @@
     "pages/aboutus/aboutus",
     "pages/live/live",
     "pages/investment/investment",
-    "pages/company/company"
+    "pages/company/company",
+    "pages/supplyinfodetail/supplyinfodetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

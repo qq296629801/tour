@@ -8,17 +8,15 @@
     <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#fff" />
   </view>
 </view>
-<view class="lunbo">
-  <swiper class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
-    <block wx:for="{{banner}}" wx:key="unique">
-      <swiper-item>
-        <navigator url="{{item.target}}">
-          <image src="{{item.url}}" mode="aspectFill" class="banner" lazy-load="true"></image>
-        </navigator>
-      </swiper-item>
-    </block>
-  </swiper>
-</view>
+<swiper class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
+  <block wx:for="{{banner}}" wx:key="unique">
+    <swiper-item>
+      <navigator url="{{item.target}}">
+        <image src="{{item.url}}" mode="aspectFill" class="banner" lazy-load="true"></image>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
 <view class="news-box">
   <view class="news">
     <text class="news-tips">最新公告：</text>

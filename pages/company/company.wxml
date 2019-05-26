@@ -1,14 +1,12 @@
-<view class="lunbo">
-  <swiper class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
-    <block wx:for="{{banner}}" wx:key="unique">
-      <swiper-item>
-        <navigator url="{{item.target}}">
-          <image src="{{item.url}}" mode="aspectFill" class="banner" lazy-load="true"></image>
-        </navigator>
-      </swiper-item>
-    </block>
-  </swiper>
-</view>
+<swiper class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
+  <block wx:for="{{banner}}" wx:key="unique">
+    <swiper-item>
+      <navigator url="{{item.target}}">
+        <image src="{{item.url}}" mode="aspectFill" class="banner" lazy-load="true"></image>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
 <view class="news-box">
   <view class="news">
     <text class="news-tips">最新公告：</text>
@@ -51,4 +49,22 @@
     <image class="img-item" src="{{item.url}}" lazy-load="true"></image>
     <text class='img-title'>{{item.title}}</text>
   </view>
+</view>
+<view class='empty'></view>
+<view class='foot'>
+  <view class='foot-left'>
+    <view class='foot-item'>
+      <image class='foot-img' src='../../images/share.png'></image>
+      <text>分享</text>
+    </view>
+    <view class='foot-item'>
+      <image class='foot-img' src='../../images/liked.png'></image>
+      <text>关注</text>
+    </view>
+    <view class='foot-item'>
+      <image class='foot-img' src='../../images/navigator.png'></image>
+      <text>导航</text>
+    </view>
+  </view>
+  <view class='foot-btn'>联系合作</view>
 </view>

@@ -1,2 +1,29 @@
-<!--pages/supplyinfo/supplyinfo.wxml-->
-<text>pages/supplyinfo/supplyinfo.wxml</text>
+<swiper class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
+  <block wx:for="{{banner}}" wx:key="unique">
+    <swiper-item>
+      <navigator url="{{item.target}}">
+        <image src="{{item.url}}" mode="aspectFill" class="banner" lazy-load="true"></image>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="box">
+  <view class="search-bar">
+    <image src="../../images/search.png"></image>
+    <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#fff" />
+  </view>
+</view>
+<view class='item-box' wx:for='{{list}}' wx:key='*this' data-id='{{item.id}}' bindtap='toDetail'>
+  <view class='item'>项目名称：{{item.name}}</view>
+  <view class='item'>发布时间：{{item.time}}</view>
+  <view class='item'>信息编号：{{item.num}}</view>
+  <view class='item'>供求类型：{{item.type}}</view>
+  <view class='item'>采购单位：{{item.dep}}</view>
+  <view class='item'>单位地址：{{item.address}}</view>
+  <view class='item'>采购联系人：{{item.contacts}}</view>
+  <view class='item'>联系方式：{{item.tel}}</view>
+  <view class='item-btns'>
+    <text class='city'>{{item.city}}</text>
+    <text class='status'>{{item.status==0?'预告':(item.status==1?'进行':'完成')}}</text>
+  </view>
+</view>

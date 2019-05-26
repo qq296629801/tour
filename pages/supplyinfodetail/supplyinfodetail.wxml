@@ -1,0 +1,38 @@
+<view class='item-box'>
+  <view class='item'>项目名称：{{detail.name}}</view>
+  <view class='item'>发布时间：{{detail.time}}</view>
+  <view class='item'>信息编号：{{detail.num}}</view>
+  <view class='item'>供求类型：{{detail.type}}</view>
+  <view class='item'>采购单位：{{detail.dep}}</view>
+  <view class='item'>单位地址：{{detail.address}}</view>
+  <view class='item'>采购联系人：{{detail.contacts}}</view>
+  <view class='item'>联系方式：{{detail.tel}}</view>
+  <view class='item-btns'>
+    <text class='city'>{{detail.city}}</text>
+    <text class='status'>{{detail.status==0?'预告':(detail.status==1?'进行':'完成')}}</text>
+  </view>
+</view>
+<view class="img-wrap">
+  <view class="img-box" wx:for="{{detail.imgs}}" wx:key="*this">
+    <image class="img-item" src="{{item.url}}" lazy-load="true"></image>
+  </view>
+</view>
+<view class='introduce'>
+  <view class='introduce-color'>采购描述：</view>
+  <text class='introduce-color'>{{detail.introduce}}</text>
+</view>
+<view class='empty'></view>
+<view class='foot'>
+  <view class='foot-left'>
+    <view class='foot-item'>
+      <image class='foot-img' src='../../images/share.png'></image>
+      <text>分享</text>
+    </view>
+    <text class='line'></text>
+    <view class='foot-item'>
+      <image class='foot-img' src='../../images/liked.png'></image>
+      <text>关注</text>
+    </view>
+  </view>
+  <view class='foot-btn'>解锁隐藏信息</view>
+</view>
