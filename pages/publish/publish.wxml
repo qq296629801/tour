@@ -35,7 +35,7 @@
 <button class="publish-btn" bindtap="handlePublish">立 即 发 布</button>
 <modal hidden="{{hidden}}" title="成为会员，随心发布" confirm-text="支付宝" cancel-text="微信" bindcancel="weixinPay" bindconfirm="alipay">
   <radio-group class="radio-group" bindchange="radioChange">
-    <label class="radio" wx:for="{{items}}" wx:key="{{item.value}}">
+    <label class="radio" wx:for="{{items}}" wx:key="unique">
       <radio value="{{item.value}}" />{{item.name}}
     </label>
   </radio-group>

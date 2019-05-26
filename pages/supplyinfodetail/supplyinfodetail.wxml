@@ -13,7 +13,7 @@
   </view>
 </view>
 <view class="img-wrap">
-  <view class="img-box" wx:for="{{detail.imgs}}" wx:key="*this">
+  <view class="img-box" wx:for="{{detail.imgs}}" wx:key="unique">
     <image class="img-item" src="{{item.url}}" lazy-load="true"></image>
   </view>
 </view>
@@ -34,5 +34,12 @@
       <text>关注</text>
     </view>
   </view>
-  <view class='foot-btn'>解锁隐藏信息</view>
+  <view class='foot-btn' bindtap='getHiddenInfo'>解锁隐藏信息</view>
 </view>
+<modal hidden="{{hidden}}" title="成为会员，随心发布" confirm-text="支付宝" cancel-text="微信" bindcancel="weixinPay" bindconfirm="alipay">
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}" wx:key="unique">
+      <radio value="{{item.value}}" />{{item.name}}
+    </label>
+  </radio-group>
+</modal>

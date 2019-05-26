@@ -19,7 +19,7 @@
   <text class='money'>{{'1000.00'}} 元</text>
   <button class='get-money-btn' bindtap="handleGetMoney">提 现</button>
 </view>
-<navigator class='con-item' wx:for="{{itemList}}" wx:key="{{item.key}}" url='{{item.url}}'>
+<navigator class='con-item' wx:for="{{itemList}}" wx:key="unique" url='{{item.url}}'>
   <view class='con-item-box'>
     <image class='item-img' src='{{item.imgPath}}'></image>
     <text>{{item.name}}</text>

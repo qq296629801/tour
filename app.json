@@ -14,7 +14,8 @@
     "pages/live/live",
     "pages/investment/investment",
     "pages/company/company",
-    "pages/supplyinfodetail/supplyinfodetail"
+    "pages/supplyinfodetail/supplyinfodetail",
+    "pages/supliertype/supliertype"
   ],
   "window": {
     "backgroundTextStyle": "light",

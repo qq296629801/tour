@@ -1,8 +1,4 @@
-//获取应用实例
-var app = getApp()
-var api = require('../../utils/api');
 Page({
-
   /**
    * 页面的初始数据
    */

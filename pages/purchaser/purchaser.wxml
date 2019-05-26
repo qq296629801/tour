@@ -1,4 +1,4 @@
-<view class='item' wx:for='{{list}}' wx:key='*this' data-id='{{item.id}}' bindtap='toDetail'>
+<view class='item' wx:for='{{list}}' wx:key='unique' data-id='{{item.id}}' bindtap='toDetail'>
   <view class='item-top'>
     <view class='item-top-left'>
       <image class='avatar-img' mode='scaleToFill' src='{{item.avatar}}'></image>

@@ -6,6 +6,13 @@ Page({
    */
   data: {
     id: null,
+    payType: '',
+    hidden: true,
+    items: [
+      { name: '包周会员免费', value: 0 },
+      { name: '半年会员￥1000', value: 1 },
+      { name: '包年会员￥2000（推荐）', value: 2 }
+    ],
     detail: {
       name: '长沙麓谷汽车世界',
       time: '2019-04-05',
@@ -31,7 +38,28 @@ Page({
     湖南省魅力五洲景观花海有限公司秉承“诚信、共赢、稳健、发展”的理念，求真务实、开拓进取，热忱的欢迎广大新老客户前来参观考察洽谈合作。`,
     }
   },
-
+  getHiddenInfo () {
+    this.setData({
+      hidden: false
+    })
+  },
+  radioChange(e) {
+    this.setData({
+      payType: e.detail.value
+    })
+  },
+  weixinPay() {
+    console.warn('微信支付')
+    this.setData({
+      hidden: true
+    });
+  },
+  alipay() {
+    console.warn('支付宝支付')
+    this.setData({
+      hidden: true
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -115,3 +115,13 @@
   width: 2rpx;
   background: #eee;
 }
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+.radio {
+  height: 70rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}

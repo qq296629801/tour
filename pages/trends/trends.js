@@ -1,5 +1,3 @@
-import util from './../../utils/util.js';
-var api = require('../../utils/api');
 Page({
   data: {
     isOne: true,
@@ -81,8 +79,8 @@ Page({
   },
   //图片点击事件
   imgYu (event) {
-    let src = event.currentTarget.dataset.src;//获取data-src
-    let imgList = event.currentTarget.dataset.list;//获取data-list
+    let src = event.currentTarget.dataset.src
+    let imgList = event.currentTarget.dataset.list
     //图片预览
     wx.previewImage({
       current: src, // 当前显示图片的http链接
@@ -113,52 +111,4 @@ Page({
       }
     })
   },
-  setList: function (page) {
-    let that = this;
-    var data = wx.getStorageSync('tenderlist');
-    console.log(data);
-    if (data != null) {
-      this.setData(data)
-    }
-    api.get(api.TENDER + "/list", { page: page })
-      .then(res => {
-        var datas = res.data.data.list;
-        for (var i in datas) {
-          datas[i].columns.begin_date = util.formatTime(datas[i].columns.begin_date)
-          datas[i].columns.end_date = util.formatTime(datas[i].columns.end_date)
-        }
-        wx.setStorageSync('tenderlist', {
-          activitylist: datas,
-          page: res.data.data.pageNumber,
-          totalPage: res.data.data.totalPage
-        });
-        this.setData({
-          activitylist: datas,
-          page: res.data.data.pageNumber,
-          totalPage: res.data.data.totalPage
-        })
-      })
-  },
-  onLoad: function (options) { //加载数据渲染页面
-    this.setList(options.id == null ? 1 : options.id);
-    this.fetchSortData();
-  },
-  fetchSortData: function () { //获取筛选条件
-    this.setData({
-      "sort": [
-        {
-          "id": 0,
-          "title": "热门点击"
-        },
-        {
-          "id": 1,
-          "title": "最新发布"
-        },
-        {
-          "id": 2,
-          "title": "最多参与"
-        },
-      ]
-    })
-  }
 })

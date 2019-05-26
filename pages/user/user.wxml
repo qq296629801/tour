@@ -69,7 +69,7 @@
   <text class='tips tips-empty'>教育经历</text>
   <text class='add-btn'>新增</text>
 </view>
-<view class='input-box list-box' wx:for='{{userInfo.educations}}' wx:key='*this'>
+<view class='input-box list-box' wx:for='{{userInfo.educations}}' wx:key='unique'>
   <view class='list-box-con'>
       <text class='tips'>学校名称</text>
       <input class='input' value='{{item.college}}' placeholder='请输入学校名称'></input>
@@ -87,7 +87,7 @@
   <text class='tips tips-empty'>工作经历</text>
   <text class='add-btn'>新增</text>
 </view>
-<view class='input-box list-box' wx:for='{{userInfo.jobs}}' wx:key='*this'>
+<view class='input-box list-box' wx:for='{{userInfo.jobs}}' wx:key='unique'>
   <view class='list-box-con'>
     <text class='tips'>工作岗位</text>
     <input class='input' value='{{item.job}}' placeholder='请输入工作岗位'></input>

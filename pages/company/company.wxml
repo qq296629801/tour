@@ -38,14 +38,14 @@
 </view>
 <view class='img-item-top'>景区图片</view>
 <view class="img-wrap">
-  <view class="img-box" wx:for="{{info.imgs}}" wx:key="*this">
+  <view class="img-box" wx:for="{{info.imgs}}" wx:key="unique">
     <image class="img-item" src="{{item.url}}" lazy-load="true"></image>
     <text class='img-title'>{{item.title}}</text>
   </view>
 </view>
 <view class='img-item-top'>特色景点</view>
 <view class="img-wrap">
-  <view class="img-box" wx:for="{{info.imgss}}" wx:key="*this">
+  <view class="img-box" wx:for="{{info.imgss}}" wx:key="unique">
     <image class="img-item" src="{{item.url}}" lazy-load="true"></image>
     <text class='img-title'>{{item.title}}</text>
   </view>

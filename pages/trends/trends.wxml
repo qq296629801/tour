@@ -8,7 +8,7 @@
   <view data-index="{{false}}" class="{{!isOne?'active':''}}" bindtap="selectType">人气排名</view>
 </view>
 <view class='con'>
-  <view class='item' wx:for="{{list}}" wx:key="{{item.id}}">
+  <view class='item' wx:for="{{list}}" wx:key="unique">
     <view class='item-left'>
       <image class='avator' mode='scaleToFill' src='{{item.avator}}'></image>
     </view>

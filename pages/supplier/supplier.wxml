@@ -1,2 +1,22 @@
-<!--pages/supplier/supplier.wxml-->
-<text>pages/supplier/supplier.wxml</text>
+<swiper class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
+  <block wx:for="{{banner}}" wx:key="unique">
+    <swiper-item>
+      <navigator url="{{item.target}}">
+        <image src="{{item.url}}" mode="aspectFill" class="banner" lazy-load="true"></image>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="icon-box">
+  <view class="icon-item" wx:for="{{icons}}" wx:key="unique" data-item='{{item}}' bindtap='toType'>
+    <image src="{{item.icon}}" lazy-load="true"></image>{{item.text}}
+    <text>{{item.name}}</text>
+  </view>
+</view>
+<view class='img-item-top'>热门产品</view>
+<view class="img-wrap">
+  <view class="img-box" wx:for="{{imgs}}" wx:key="unique">
+    <image class="img-item" src="{{item.url}}" lazy-load="true"></image>
+    <text class='img-title'>{{item.title}}</text>
+  </view>
+</view>

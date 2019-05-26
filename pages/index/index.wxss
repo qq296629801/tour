@@ -2,7 +2,7 @@
 .box{
   box-sizing: border-box;
   width: 100%;
-  height: 91rpx;
+  height: 90rpx;
   padding: 0 28rpx;
   background: #00736d;
   display: flex;
@@ -39,7 +39,7 @@
   background: #32908a;
   border-radius: 30rpx;
   color:#fff;
-  height: 61rpx;
+  height: 60rpx;
   padding-left: 50rpx;
   font-size: 22rpx;
 }
@@ -82,13 +82,13 @@
 .news-tips {
   color: #47a86c;
 }
-.index-menu-box{
+.icon-box{
 	display: flex;
 	flex-wrap: wrap;
 	background: #fff;
   margin-bottom: 10rpx;
 }
-.index-menu-item{
+.icon-item{
   width: 33.3%;
   padding: 20rpx 0;
 	display: flex;
@@ -96,20 +96,14 @@
   align-items: center;
   flex-direction: column;
   color: #696969;
-  font-size: 21rpx;
 }
-.index-menu-item image{
+.icon-item image{
 	width: 140rpx;
 	height: 140rpx;
 }
-.index-menu-item text{
-  margin-top: -20rpx;
-	display: block;
-  text-align: center;
-	font-size: 25rpx;
-	line-height: 1.4;
-	white-space: nowrap;
-  padding-left: 30rpx;
+.icon-item text{
+  margin-top: -10rpx;
+	font-size: 24rpx;
 }
 .tuijian {
   display: flex;

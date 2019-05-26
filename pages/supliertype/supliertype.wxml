@@ -1,0 +1,7 @@
+<view class='top-box'>
+  <text class='top-name'>{{name}}</text>
+  <view class="search-bar">
+    <image src="../../images/search.png"></image>
+    <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#999" />
+  </view>
+</view>

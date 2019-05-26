@@ -24,14 +24,15 @@
     <text class="more">···</text>
   </view>
 </view>
-<view class="index-menu-box">
-  <navigator class="index-menu-item" wx:for="{{indexmenu}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
-    <image src="{{item.icon}}" lazy-load="true"></image>{{item.text}}
+<view class="icon-box">
+  <navigator class="icon-item" wx:for="{{icons}}" wx:key="unique" url="{{item.url}}">
+    <image src="{{item.icon}}" lazy-load="true"></image>
+    <text>{{item.name}}</text>
   </navigator>
 </view>
 <view class="tuijian">
-  <navigator class="index-menu-item tuijian-box" wx:for="{{shops}}" wx:key="{{item.url}}" url="../{{item.url}}/{{item.url}}">
-    {{item.text}}
+  <view class="icon-item tuijian-box" wx:for="{{shops}}" wx:key="unique">
+    <text>{{item.name}}</text>
     <image class="img" src="{{item.url}}" lazy-load="true"></image>
-  </navigator>
+  </view>
 </view>

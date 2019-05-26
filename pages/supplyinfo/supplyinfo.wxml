@@ -13,7 +13,7 @@
     <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#fff" />
   </view>
 </view>
-<view class='item-box' wx:for='{{list}}' wx:key='*this' data-id='{{item.id}}' bindtap='toDetail'>
+<view class='item-box' wx:for='{{list}}' wx:key='unique' data-id='{{item.id}}' bindtap='toDetail'>
   <view class='item'>项目名称：{{item.name}}</view>
   <view class='item'>发布时间：{{item.time}}</view>
   <view class='item'>信息编号：{{item.num}}</view>
