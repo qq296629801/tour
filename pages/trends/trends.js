@@ -74,7 +74,7 @@ Page({
   },
   selectType(e) {
     this.setData({
-      isOne: e.currentTarget.dataset.index
+      isOne: e.currentTarget.dataset.type
     })
   },
   //图片点击事件

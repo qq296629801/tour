@@ -2,9 +2,9 @@
   <textarea placeholder="要发布的内容或项目名称" auto-focus />
 </view>
 <view class='mid'>
-  <view data-index="{{true}}" class="{{isOne?'active':''}}" bindtap="selectType">发布图片</view>
+  <view data-type="{{true}}" class="{{isOne?'active':''}}" bindtap="selectType">发布图片</view>
   <text class='fengexian'></text>
-  <view data-index="{{false}}" class="{{!isOne?'active':''}}" bindtap="selectType">发布视频</view>
+  <view data-type="{{false}}" class="{{!isOne?'active':''}}" bindtap="selectType">发布视频</view>
 </view>
 <view class='publish-pic'>
   <image src='../../images/add.png' bindtap="choice"></image>

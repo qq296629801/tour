@@ -6,9 +6,355 @@ Page({
    */
   data: {
     id: null,
-    name: null
+    name: null,
+    num: 0,
+    list: [
+      {
+        name: '夯土',
+        list: [
+          {
+            name: '玉米收割机345',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          }
+        ]
+      },
+      {
+        name: '夯土夯土夯土夯土',
+        list: [
+          {
+            name: '玉米收割机ertt',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          }
+        ]
+      },
+      {
+        name: '夯土',
+        list: [
+          {
+            name: '玉米收割机2et',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          }
+        ]
+      },
+      {
+        name: '夯土',
+        list: [
+          {
+            name: '玉米收割机3wrwrw',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          }
+        ]
+      },
+      {
+        name: '夯土',
+        list: [
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机wrwr',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机wr',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          }
+        ]
+      },
+      {
+        name: '夯土',
+        list: [
+          {
+            name: '玉米收割机5werw',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          }
+        ]
+      },
+      {
+        name: '夯土',
+        list: [
+          {
+            name: '玉米收割机eerr',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          },
+          {
+            name: '玉米收割机',
+            url: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+            size: '30*2.5m（可定制）',
+            base: '无需',
+            scale: '20',
+            factory: '百花农业科技有限公司'
+          }
+        ]
+      }
+    ]
   },
-
+  changeTab (e) {
+    this.setData({
+      num: e.currentTarget.dataset.index
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

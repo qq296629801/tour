@@ -3,9 +3,9 @@
   <image class="photo-btn" src='../../images/photo.png' bindtap="choice"></image>
 </view>
 <view class='mid'>
-  <view data-index="{{true}}" class="{{isOne?'active':''}}" bindtap="selectType">最新动态</view>
+  <view data-type="{{true}}" class="{{isOne?'active':''}}" bindtap="selectType">最新动态</view>
   <text class='fengexian'></text>
-  <view data-index="{{false}}" class="{{!isOne?'active':''}}" bindtap="selectType">人气排名</view>
+  <view data-type="{{false}}" class="{{!isOne?'active':''}}" bindtap="selectType">人气排名</view>
 </view>
 <view class='con'>
   <view class='item' wx:for="{{list}}" wx:key="unique">

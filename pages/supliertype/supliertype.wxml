@@ -1,7 +1,28 @@
-<view class='top-box'>
-  <text class='top-name'>{{name}}</text>
-  <view class="search-bar">
-    <image src="../../images/search.png"></image>
-    <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#999" />
+<view class='wrap'>
+  <view class='top-box'>
+    <text class='top-name'>{{name}}</text>
+    <view class="search-bar">
+      <image src="../../images/search.png"></image>
+      <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#999" />
+    </view>
+  </view>
+  <view class='con-box'>
+    <view class='con-box-left'>
+      <view class='{{index==num?"item-tab active":"item-tab"}}' wx:for='{{list}}' wx:key='unique' data-index='{{index}}' bindtap='changeTab'>
+        {{item.name}}
+      </view>
+    </view>
+    <view class='con-box-right'>
+      <view class='item' wx:for='{{list[num].list}}' wx:key='unique'>
+        <image class='img' src="{{item.url}}" mode="aspectFill" lazy-load="true"></image>
+        <view class='item-text'>
+          <text class='item-title'>{{item.name}}</text>
+          <text>规格尺寸：{{item.size}}</text>
+          <text>基础建设：{{item.base}}</text>
+          <text>容纳规模：{{item.scale}}人</text>
+          <text>生产厂家：{{item.factory}}</text>
+        </view>
+      </view>
+    </view>
   </view>
 </view>

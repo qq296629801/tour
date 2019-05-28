@@ -40,7 +40,7 @@ Page({
   },
   selectType(e) {
     this.setData({
-      isOne: e.currentTarget.dataset.index
+      isOne: e.currentTarget.dataset.type
     })
   },
   bindRegionChange(e) {
