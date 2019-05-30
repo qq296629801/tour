@@ -1,2 +1,51 @@
-<!--pages/aboutus/aboutus.wxml-->
-<text>pages/aboutus/aboutus.wxml</text>
+<swiper class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
+  <block wx:for="{{banner}}" wx:key="unique">
+    <swiper-item>
+      <navigator url="{{item.target}}">
+        <image src="{{item.url}}" mode="aspectFill" class="banner" lazy-load="true"></image>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='item'>
+  <view class='title-line'>
+    <text class='title'>联盟简介</text>
+    <text class='line'></text>
+  </view>
+  <view class='item-con'>{{introduce}}</view>
+</view>
+<view class='item'>
+  <view class='title-line'>
+    <text class='title'>企业文化</text>
+    <text class='line'></text>
+  </view>
+  <view class='item-con'>{{introduce}}</view>
+</view>
+<view class='item'>
+  <view class='title-line'>
+    <text class='title'>发展历程</text>
+    <text class='line'></text>
+  </view>
+  <view class='item-con'>{{introduce}}</view>
+</view>
+<view class='item'>
+  <view class='title-line'>
+    <text class='title'>业务范围</text>
+    <text class='line'></text>
+  </view>
+  <view class='item-con'>{{introduce}}</view>
+</view>
+<view class='item'>
+  <view class='title-line'>
+    <text class='title'>业务分布</text>
+    <text class='line'></text>
+  </view>
+  <view class='item-con'>{{introduce}}</view>
+</view>
+<view class='item'>
+  <view class='title-line'>
+    <text class='title'>结束</text>
+    <text class='line'></text>
+  </view>
+  <view class='item-con'>{{introduce}}</view>
+</view>

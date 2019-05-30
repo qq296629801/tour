@@ -4,7 +4,7 @@
 </view>
 <view class='mid'>
   <view data-type="{{true}}" class="{{isOne?'active':''}}" bindtap="selectType">最新动态</view>
-  <text class='fengexian'></text>
+  <text class='line'></text>
   <view data-type="{{false}}" class="{{!isOne?'active':''}}" bindtap="selectType">人气排名</view>
 </view>
 <view class='con'>

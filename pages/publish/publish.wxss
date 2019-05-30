@@ -5,7 +5,7 @@
   padding: 26rpx 29rpx;
   box-sizing: border-box;
 }
-.fengexian {
+.line {
   width: 1rpx;
 }
 .mid {

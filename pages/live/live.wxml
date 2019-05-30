@@ -1,2 +1,24 @@
-<!--pages/live/live.wxml-->
-<text>pages/live/live.wxml</text>
+<view class="live-player-box">
+  <live-player class='live-player' src="{{currentLiveUrl}}" mode="live" autoplay bindstatechange="statechange" binderror="error"/>
+</view>
+<view class="box">
+  <view class="search-bar">
+    <image src="../../images/search.png"></image>
+    <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#fff" />
+  </view>
+</view>
+<view class='mid'>
+  <view data-type="{{true}}" class="{{isOne?'active':''}}" bindtap="selectType">直播预告</view>
+  <text class='line'></text>
+  <view data-type="{{false}}" class="{{!isOne?'active':''}}" bindtap="selectType">历史回放</view>
+</view>
+<view class='item' wx:for='{{playList}}' wx:key='unique'>
+  <image class='img' src="{{item.url}}" mode="aspectFill" lazy-load="true"></image>
+  <view class='item-text'>
+    <text class='item-title'>{{item.name}}</text>
+    <text>会议时间：{{item.time}}</text>
+    <text>会议地点：{{item.address}}</text>
+    <text>会议规模：{{item.scale}}人</text>
+    <text>主办单位：{{item.organizer}}</text>
+  </view>
+</view>

@@ -26,7 +26,7 @@
   border-bottom: 1rpx solid #ff984b !important;
   color: #ff984b;
 }
-.fengexian {
+.line {
   width: 1rpx;
 }
 .item {

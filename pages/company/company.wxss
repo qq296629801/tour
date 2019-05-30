@@ -1,4 +1,3 @@
-/* pages/company/company.wxss */
 .banner{
   width: 100%;
   height:  350rpx;
