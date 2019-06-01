@@ -1,24 +1,75 @@
 <view class="live-player-box">
-  <live-player class='live-player' src="{{currentLiveUrl}}" mode="live" autoplay bindstatechange="statechange" binderror="error"/>
+  <live-player class='live-player' src="{{playList[currentIndex].url}}" mode="live" autoplay bindstatechange="statechange" binderror="error" />
 </view>
-<view class="box">
-  <view class="search-bar">
-    <image src="../../images/search.png"></image>
-    <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#fff" />
+<view hidden='{{isLiving}}'>
+  <view class="box">
+    <view class="search-bar">
+      <image src="../../images/search.png"></image>
+      <input placeholder="请输入内容" class="search-bar-txt" placeholder-style="color:#fff" />
+    </view>
+  </view>
+  <view class='mid'>
+    <view data-type="{{true}}" class="{{isOne?'active':''}}" bindtap="selectType">直播预告</view>
+    <text class='line'></text>
+    <view data-type="{{false}}" class="{{!isOne?'active':''}}" bindtap="selectType">历史回放</view>
+  </view>
+  <view class='live-item' wx:for='{{playList}}' wx:key='unique'>
+    <image class='img' src="{{item.url}}" mode="aspectFill" lazy-load="true"></image>
+    <view class='item-text'>
+      <text class='item-title'>{{item.name}}</text>
+      <text>会议时间：{{item.time}}</text>
+      <text>会议地点：{{item.address}}</text>
+      <text>会议规模：{{item.scale}}人</text>
+      <text>主办单位：{{item.organizer}}</text>
+    </view>
   </view>
 </view>
-<view class='mid'>
-  <view data-type="{{true}}" class="{{isOne?'active':''}}" bindtap="selectType">直播预告</view>
-  <text class='line'></text>
-  <view data-type="{{false}}" class="{{!isOne?'active':''}}" bindtap="selectType">历史回放</view>
-</view>
-<view class='item' wx:for='{{playList}}' wx:key='unique'>
-  <image class='img' src="{{item.url}}" mode="aspectFill" lazy-load="true"></image>
-  <view class='item-text'>
-    <text class='item-title'>{{item.name}}</text>
-    <text>会议时间：{{item.time}}</text>
-    <text>会议地点：{{item.address}}</text>
-    <text>会议规模：{{item.scale}}人</text>
-    <text>主办单位：{{item.organizer}}</text>
+<view hidden='{{!isLiving}}' class='living'>
+  <view class='detail'>{{playList[currentIndex].name}}</view>
+  <view class='mid'>
+    <view data-type="{{true}}" class="{{isOne1?'active':''}}" bindtap="selectType1">会务聊天</view>
+    <text class='line'></text>
+    <view data-type="{{false}}" class="{{!isOne1?'active':''}}" bindtap="selectType1">直播粉丝</view>
+  </view>
+  <view hidden='{{isOne1}}' class='item' wx:for='{{list}}' wx:key='unique' data-id='{{item.id}}' bindtap='toDetail'>
+    <view class='item-top'>
+      <view class='item-top-left'>
+        <image class='avatar-img' mode='scaleToFill' src='{{item.avatar}}'></image>
+      </view>
+      <view class='item-top-right'>
+        <view class='item-top-right-top'>
+          <text class='name'>{{item.name}}</text>
+          <text class='font-color'>{{item.title}}</text>
+        </view>
+        <view class='item-top-right-bottom'>
+          <text class='company-name font-color'>{{item.companyName}}</text>
+          <view class='img-box'>
+            <image class='phone-img' src='../../images/phone.png'></image>
+            <image class='like-img' src='{{item.isLike?"../../images/like.png":"../../images/liked.png"}}'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='item-bottom'>
+      <text class='desc font-color'>{{item.desc}}</text>
+      <view class='city-box'>
+        <button class='city'>{{item.city}}</button>
+      </view>
+    </view>
+  </view>
+  <view hidden='{{!isOne1}}'>
+    <view class='chart'>
+      <view class='chart-btn'>
+        <input class='chart-input' placeholder="这是一个可以自动聚焦的input" auto-focus/>
+        <image bindtap='handleShowEmoji' class='foot-img' src='../../images/emoji.png'></image>
+        <image class='foot-img' src='../../images/share.png'></image>
+        <image class='foot-img' src='../../images/like.png'></image>
+      </view>
+      <view hidden='{{showEmoji}}' class='emoji-box'>
+        <view class='emotions-img-box' wx:for='{{emotions}}' wx:key='unique'>
+          <image class='emotions-img' src='../../images/emotion/{{item}}.gif'></image>
+        </view>
+      </view>
+    </view>
   </view>
 </view>

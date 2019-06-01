@@ -4,8 +4,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    emotions: [],
+    showEmoji: true,
+    isLiving: false,
     isOne: true,
-    currentLiveUrl: 'https://domain/pull_stream',
+    isOne1: true,
+    currentIndex: 0,
     playList: [
       {
         name: '第六届林业与畜牧业国际研讨会 (FAH 2019)',
@@ -39,11 +43,79 @@ Page({
         scale: '20',
         organizer: '百花农业科技有限公司'
       }
+    ],
+    list: [
+      {
+        avatar: 'http://img.52z.com/upload/news/image/20180108/20180108122831_73637.jpg',
+        name: '张三',
+        title: '项目经理',
+        companyName: '北京盛大集团公司',
+        city: '长沙',
+        isLike: true,
+        id: '1',
+        desc: '该公司成立于1993年，在董事长的领导下迅速成长为100亿资产规模的大型高薪产业'
+      },
+      {
+        avatar: 'http://img.52z.com/upload/news/image/20180108/20180108122831_73637.jpg',
+        name: '张三',
+        title: '项目经理',
+        companyName: '北京盛大集团公司',
+        city: '长沙',
+        isLike: false,
+        id: '2',
+        desc: '该公司成立于1993年，在董事长的领导下迅速成长为100亿资产规模的大型高薪产业'
+      },
+      {
+        avatar: 'http://img.52z.com/upload/news/image/20180108/20180108122831_73637.jpg',
+        name: '张三',
+        title: '项目经理',
+        companyName: '北京盛大集团公司',
+        city: '长沙',
+        isLike: true,
+        id: '3',
+        desc: '该公司成立于1993年，在董事长的领导下迅速成长为100亿资产规模的大型高薪产业'
+      },
+      {
+        avatar: 'http://img.52z.com/upload/news/image/20180108/20180108122831_73637.jpg',
+        name: '张三',
+        title: '项目经理',
+        companyName: '北京盛大集团公司',
+        city: '长沙',
+        isLike: false,
+        id: '1',
+        desc: '该公司成立于1993年，在董事长的领导下迅速成长为100亿资产规模的大型高薪产业'
+      },
+      {
+        avatar: 'http://img.52z.com/upload/news/image/20180108/20180108122831_73637.jpg',
+        name: '张三',
+        title: '项目经理',
+        companyName: '北京盛大集团公司',
+        city: '长沙',
+        isLike: true,
+        id: '4',
+        desc: '该公司成立于1993年，在董事长的领导下迅速成长为100亿资产规模的大型高薪产业'
+      }
     ]
+  },
+  handleShowEmoji () {
+    this.setData({
+      showEmoji: !this.data.showEmoji
+    })
   },
   selectType(e) {
     this.setData({
       isOne: e.currentTarget.dataset.type
+    })
+  },
+  selectType1(e) {
+    this.setData({
+      isOne1: e.currentTarget.dataset.type
+    })
+  },
+  toDetail(e) {
+    let id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '../company/company?id=' + id,
     })
   },
   statechange(e) {
@@ -56,7 +128,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let emotions = []
+    for (let i = 100; i < 200; i++) {
+      emotions.push(i)
+    }
+    this.setData({
+      emotions
+    })
+    console.warn('fff', this.data.emotions)
   },
 
   /**
