@@ -135,7 +135,6 @@ Page({
     this.setData({
       emotions
     })
-    console.warn('fff', this.data.emotions)
   },
 
   /**

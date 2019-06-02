@@ -1,2 +1,99 @@
-<!--pages/investment/investment.wxml-->
-<text>pages/investment/investment.wxml</text>
+<view wx:if='{{type===0}}'>
+  <view class='item'>
+    <text class='title head-title'>信息验证</text>
+  </view>
+  <view class='item'>
+    <text class='title'>手机号码：</text>
+    <input type='number' placeholder="请输入手机号码" auto-focus/>
+  </view>
+  <view class='item'>
+    <text class='title'>验证号码：</text>
+    <input maxlength="6" placeholder="请输入您收到的验证码" auto-focus/>
+  </view>
+  <view class='item'>
+    <text class='title'>入驻地址：</text>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        <text wx:if="{{region.length>0}}">{{region[0]}} / {{region[1]}} / {{region[2]}}
+    </text>
+        <text class='picker-tips' wx:else>请选择入驻地址</text>
+      </view>
+    </picker>
+  </view>
+  <view class='item'>
+    <text class='title'>入驻时间：</text>
+    <picker mode="date" bindchange="bindDateChange" value="{{date}}">
+      <view class="picker">
+        <text wx:if="{{date.length>0}}">{{date}}
+    </text>
+        <text class='picker-tips' wx:else>请选择入住时间</text>
+      </view>
+    </picker>
+  </view>
+  <view class='btns'>
+    <button class='btn'>一周（免费）</button>
+    <button class='btn'>半年VIP（费用1000元）</button>
+    <button class='btn'>一年VIP（费用2000元）</button>
+  </view>
+  <view class='foot'>
+    <button class='btn'>申请入驻</button>
+    <text class='agreement'>我同意以上协议▼</text>
+  </view>
+</view>
+<view wx:if='{{type===1}}'>
+  <view class='item'>
+    <text class='title head-title'>基本信息</text>
+  </view>
+  <view class='item'>
+    <text class='title'>公司名称：</text>
+    <input placeholder="请输入公司名称" auto-focus/>
+  </view>
+  <view class='item'>
+    <text class='title'>行业分类：</text>
+    <picker mode="region" bindchange="bindRegion1Change" value="{{region1}}" custom-item="{{customItem}}">
+      <view class="picker">
+        <text wx:if="{{region1.length>0}}">{{region[0]}} / {{region[1]}} / {{region[2]}}
+    </text>
+        <text class='picker-tips' wx:else>请选择行业分类</text>
+      </view>
+    </picker>
+  </view>
+  <view class='item'>
+    <text class='title'>公司地址：</text>
+    <picker mode="region" bindchange="bindRegion1Change" value="{{region1}}" custom-item="{{customItem}}">
+      <view class="picker">
+        <text wx:if="{{region1.length>0}}">{{region[0]}} / {{region[1]}} / {{region[2]}}
+    </text>
+        <text class='picker-tips' wx:else>请选择公司地址</text>
+      </view>
+    </picker>
+  </view>
+  <view class='item'>
+    <text class='title'>联系方式：</text>
+    <input type='number' placeholder="请输入联系方式" auto-focus/>
+  </view>
+  <view class='item'>
+    <text class='title head-title'>公司信息</text>
+  </view>
+  <view class='upload'>
+    <image class='upload-img' src='../../images/add.png' data-index="0" bindtap="choice"></image>
+    <view class='upload-look'>
+      <image wx:if='{{license}}' class='upload-img' src='{{license}}'></image>
+      <text wx:else class='title'>营业执照</text>
+    </view>
+  </view>
+  <view class='upload'>
+    <image class='upload-img' src='../../images/add.png' data-index="1" bindtap="choice"></image>
+    <view class='upload-look'>
+      <image wx:if='{{idCard}}' class='upload-img' src='{{idCard}}'></image>
+      <text wx:else class='title'>法人身份证</text>
+    </view>
+  </view>
+  <view class='upload'>
+    <image class='upload-img' src='../../images/add.png' data-index="2" bindtap="choice"></image>
+    <view class='upload-look'>
+      <image wx:if='{{logo}}' class='upload-img' src='{{logo}}'></image>
+      <text wx:else class='title'>公司logo</text>
+    </view>
+  </view>
+</view>
